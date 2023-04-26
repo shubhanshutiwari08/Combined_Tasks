@@ -97,7 +97,7 @@ export default function Chat() {
           </div>
           <div className='flex space-x-5'>
             <div className='w-[500px] h-[500px] bg-white drop-shadow-lg mt-16 rounded-lg'>
-              <div className='flex p-8 '>
+              <div className='flex'>
                 <img className='w-16 h-16 rounded-full' src={user} alt="" />
                 <div className='flex  justify-between'>
                   <div className='mx-2'>

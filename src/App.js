@@ -1,5 +1,8 @@
 import './App.css';
+// import Home from './componenets/Home';
+
 import Chat from './componenets/Chat';
+// import Sidebar from './componenets/Sidebar';
 // import Qnasec from './componenets/Qnasection';
 // import {AiOutlineCaretUp ,AiOutlineCaretDown} from "react-icons/ai";
 // import imgone from './assets/java.png'
@@ -83,6 +86,9 @@ function App() {
     <>
     {/* <Qnasec/> */}
     <Chat />
+    {/* <Sidebar/> */}
+    {/* <Home/> */}
+    
     </>
   );
 }
