@@ -1,7 +1,8 @@
 import './App.css';
+import Profile from './componenets/Profile';
 // import Home from './componenets/Home';
 
-import Chat from './componenets/Chat';
+// import Chat from './componenets/Chat';
 // import Sidebar from './componenets/Sidebar';
 // import Qnasec from './componenets/Qnasection';
 // import {AiOutlineCaretUp ,AiOutlineCaretDown} from "react-icons/ai";
@@ -85,9 +86,10 @@ function App() {
     // </section>
     <>
     {/* <Qnasec/> */}
-    <Chat />
+    {/* <Chat /> */}
     {/* <Sidebar/> */}
     {/* <Home/> */}
+    <Profile />
     
     </>
   );
