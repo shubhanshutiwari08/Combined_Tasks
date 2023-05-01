@@ -1,48 +1,71 @@
 import React from 'react'
+import './trap.css'
 
 export default function Rhom() {
   return (
     <div className='bg-[#1e2736] min-h-screen  '>
-      <div className='flex flex-col mx-80  items-center pt-8 space-y-1 '>
-        <div className='bg-gray-500/10    h-16 w-full shadow-md -skew-x-12 shadow-blue-500/50  flex justify-between'>
-            <div className='text-cyan-500 text-lg font-semibold p-4'>Java Variable</div>
-            <div className='text-green-500 font-semibold p-4'>Attempted <sub>h</sub></div>
-            <div className='text-cyan-500 font-semibold p-4'>Questions <sub>hello</sub> </div>
-            <div className='text-cyan-500 text-2xl font-bold p-4'>309<sup className='text-yellow-500 font-semibold '>Points</sup> </div>
-            <h1 className='bg-blue-500 text-white h-full p-4'>Solve</h1>      
-        </div>
-        <div className='bg-gray-500/10    h-16 w-full shadow-md -skew-x-12 shadow-blue-500/50  flex justify-between'>
-            <div className='text-cyan-500 text-lg font-semibold p-4'>Java Variable</div>
-            <div className='text-green-500 font-semibold p-4'>Attempted <sub>h</sub></div>
-            <div className='text-cyan-500 font-semibold p-4'>Questions <sub>hello</sub> </div>
-            <div className='text-cyan-500 text-2xl font-bold p-4'>309<sup className='text-yellow-500 font-semibold '>Points</sup> </div>
-            <h1 className='bg-blue-500 text-white h-full p-4'>Solve</h1>      
-        </div>
-        <div className='bg-gray-500/10    h-16 w-full shadow-md -skew-x-12 shadow-blue-500/50  flex justify-between'>
-            <div className='text-cyan-500 text-lg font-semibold p-4'>Java Variable</div>
-            <div className='text-green-500 font-semibold p-4'>Attempted <sub>h</sub></div>
-            <div className='text-cyan-500 font-semibold p-4'>Questions <sub>hello</sub> </div>
-            <div className='text-cyan-500 text-2xl font-bold p-4'>309<sup className='text-yellow-500 font-semibold '>Points</sup> </div>
-            <h1 className='bg-blue-500 text-white h-full p-4'>Solve</h1>      
-        </div>
-        <div className='bg-gray-500/10    h-16 w-full shadow-md -skew-x-12 shadow-blue-500/50  flex justify-between'>
-            <div className='text-cyan-500 text-lg font-semibold p-4'>Java Variable</div>
-            <div className='text-green-500 font-semibold p-4'>Attempted <sub>h</sub></div>
-            <div className='text-cyan-500 font-semibold p-4'>Questions <sub>hello</sub> </div>
-            <div className='text-cyan-500 text-2xl font-bold p-4'>309<sup className='text-yellow-500 font-semibold '>Points</sup> </div>
-            <h1 className='bg-blue-500 text-white h-full p-4'>Solve</h1>      
-        </div>
-        <div className='bg-gray-500/10    h-16 w-full shadow-md -skew-x-12 shadow-blue-500/50  flex justify-between'>
-            <div className='text-cyan-500 text-lg font-semibold p-4'>Java Variable</div>
-            <div className='text-green-500 font-semibold p-4'>Attempted <sub>h</sub></div>
-            <div className='text-cyan-500 font-semibold p-4'>Questions <sub>hello</sub> </div>
-            <div className='text-cyan-500 text-2xl font-bold p-4'>309<sup className='text-yellow-500 font-semibold '>Points</sup> </div>
-            <h1 className='bg-blue-500 text-white h-full p-4'>Solve</h1>      
-        </div>
+      <div className='flex flex-col mx-80  items-center pt-8 space-y-1 bg-transparent '>
+        {/* <div className=' w-full ' id='trap'>
+          <div id='newbox'>
+            <p className='text-cyan-500 text-lg font-semibold p-4 absolute'>Java Variable</p>
+            <p className='text-green-500 font-semibold p-4 absolute'>Attempted <sub>h</sub></p>
+            <p className='text-cyan-500 font-semibold p-4 absolute'>Questions <sub>hello</sub> </p>
+            <p className='text-cyan-500 text-2xl font-bold p-4 absolute'>309<sup className='text-yellow-500 font-semibold '>Points</sup> </p>
+            <p className='bg-blue-500 text-white h-full p-4 absolute'>Solve</p>  
+          </div>
                 
+        </div> */}
+        {/* <div className='bg-gray-500/10    h-16 w-full shadow-md -skew-x-12 shadow-blue-500/50  flex justify-between'>
+            <div className='text-cyan-500 text-lg font-semibold p-4'>Java Variable</div>
+            <div className='text-green-500 font-semibold p-4'>Attempted <sub>h</sub></div>
+            <div className='text-cyan-500 font-semibold p-4'>Questions <sub>hello</sub> </div>
+            <div className='text-cyan-500 text-2xl font-bold p-4'>309<sup className='text-yellow-500 font-semibold '>Points</sup> </div>
+            <h1 className='bg-blue-500 text-white h-full p-4'>Solve</h1>      
+        </div>
+        <div className='bg-gray-500/10    h-16 w-full shadow-md -skew-x-12 shadow-blue-500/50  flex justify-between'>
+            <div className='text-cyan-500 text-lg font-semibold p-4'>Java Variable</div>
+            <div className='text-green-500 font-semibold p-4'>Attempted <sub>h</sub></div>
+            <div className='text-cyan-500 font-semibold p-4'>Questions <sub>hello</sub> </div>
+            <div className='text-cyan-500 text-2xl font-bold p-4'>309<sup className='text-yellow-500 font-semibold '>Points</sup> </div>
+            <h1 className='bg-blue-500 text-white h-full p-4'>Solve</h1>      
+        </div>
+        <div className='bg-gray-500/10    h-16 w-full shadow-md -skew-x-12 shadow-blue-500/50  flex justify-between'>
+            <div className='text-cyan-500 text-lg font-semibold p-4'>Java Variable</div>
+            <div className='text-green-500 font-semibold p-4'>Attempted <sub>h</sub></div>
+            <div className='text-cyan-500 font-semibold p-4'>Questions <sub>hello</sub> </div>
+            <div className='text-cyan-500 text-2xl font-bold p-4'>309<sup className='text-yellow-500 font-semibold '>Points</sup> </div>
+            <h1 className='bg-blue-500 text-white h-full p-4'>Solve</h1>      
+        </div>
+        <div className='bg-gray-500/10    h-16 w-full shadow-md -skew-x-12 shadow-blue-500/50  flex justify-between'>
+            <div className='text-cyan-500 text-lg font-semibold p-4'>Java Variable</div>
+            <div className='text-green-500 font-semibold p-4'>Attempted <sub>h</sub></div>
+            <div className='text-cyan-500 font-semibold p-4'>Questions <sub>hello</sub> </div>
+            <div className='text-cyan-500 text-2xl font-bold p-4'>309<sup className='text-yellow-500 font-semibold '>Points</sup> </div>
+            <h1 className='bg-blue-500 text-white h-full p-4'>Solve</h1>      
+        </div> */}
 
-        
-        
+        <div id='trap' className='' >
+          <div className='absolute flex -top-20 h-16 justify-center'>
+            <div className='text-cyan-500 text-lg font-semibold p-4'>Java Variable</div>
+            <div className='text-green-500 font-semibold p-4'>Attempted <sub>h</sub></div>
+            <div className='text-cyan-500 font-semibold p-4 '>Questions <sub>hello</sub> </div>
+            <div className='text-cyan-500 text-2xl font-bold p-4 '>309<sup className='text-yellow-500 font-semibold '>Points</sup> </div>
+            <div className=' bg-blue-500  text-white p-4  '>Solve</div> 
+          </div>
+        </div>
+
+        <div className=' w-full bg-gray-500/10  flex border-t-100 border-solid border-white border-r-50 border-l-50 border-transparent'>
+          <div className='flex justify-between'>
+            <div className='text-cyan-500 text-lg font-semibold p-4'>Java Variable</div>
+            <div className='text-green-500 font-semibold p-4'>Attempted <sub>h</sub></div>
+            <div className='text-cyan-500 font-semibold p-4'>Questions <sub>hello</sub> </div>
+            <div className='text-cyan-500 text-2xl font-bold p-4'>309<sup className='text-yellow-500 font-semibold '>Points</sup> </div>
+            <h1 className='bg-blue-500 text-white h-full p-4'>Solve</h1> 
+          </div>     
+        </div>
+
+          
+             
       </div>
       
     </div>
