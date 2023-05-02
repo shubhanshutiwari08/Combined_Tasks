@@ -1,10 +1,12 @@
 import './App.css';
+import Check from './componenets/Check';
 // import Quizsec from './componenets/Quizsec';
 // import Procheck from './componenets/Procheck';
 // import Profile from './componenets/Profile';
-import Rhom from './componenets/Rhom';
+// import Rhom from './componenets/Rhom';
 // import Home from './componenets/Home';
 // import Progress from './componenets/Progress';
+// import ProfileUpdate from './componenets/ProfileUpdate';
 
 // import Chat from './componenets/Chat';
 // import Sidebar from './componenets/Sidebar';
@@ -23,11 +25,13 @@ function App() {
     {/* <Sidebar/> */}
     {/* <Home/> */}
     {/* <Profile /> */}
-    <Rhom/>
+    {/* <Rhom/> */}
     {/* <Progress /> */}
     {/* <Procheck /> */}
     {/* <Quizsec /> */}
-    
+    {/* <ProfileUpdate / */}
+    {/* <ProfileUpdate /> */}
+    <Check />
     </>
   );
 }

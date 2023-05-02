@@ -1,17 +1,33 @@
 import React from 'react'
+import UserInfo from './Userinfo';
+import Ranking from './Ranking';
+import MyQuestions from './Myquestion';
+
 // import { Progress } from "@material-tailwind/react";
-// import cover from '../assets/cov.jpg'
+import cover from '../assets/fcover.png'
 import user from '../assets/user.jpg'
 import python from '../assets/python.png'
 
 export default function Profile() {
   return (
     <div className='bg-[#1e2736] '>
-        {/* <img className='object-fill h-48 w-full' src={cover} alt="" /> */}
+        <img src={cover} alt="banner" className='w-full' />
+        <div className='max-w-[1440px] mx-auto text-white'>
+                <div className='mx-5'>
+                    <UserInfo />
+                    <Ranking />
+                    <MyQuestions />
+                </div>
+        </div>
+
+
+
+
+
         <div className="mx-60 space-y-4">
             <div className='flex justify-between'>
                 <div className='flex space-x-5'>
-                    <img className='w-20 h-20' src={user} alt="" />
+                    <img  className='w-20 h-20 ' src={user} alt="" />
                     <div className='flex flex-col'>
                         <h1 className='text-white'>Chris Tacko</h1> 
                         <div className='flex space-x-4'>
