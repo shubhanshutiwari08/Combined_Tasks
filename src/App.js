@@ -1,4 +1,5 @@
 import './App.css';
+// import Quizsec from './componenets/Quizsec';
 // import Procheck from './componenets/Procheck';
 // import Profile from './componenets/Profile';
 import Rhom from './componenets/Rhom';
@@ -25,6 +26,7 @@ function App() {
     <Rhom/>
     {/* <Progress /> */}
     {/* <Procheck /> */}
+    {/* <Quizsec /> */}
     
     </>
   );
