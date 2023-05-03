@@ -1,5 +1,6 @@
 import './App.css';
-import Check from './componenets/Check';
+import Chart from './componenets/Chart';
+// import Check from './componenets/Check';
 // import Quizsec from './componenets/Quizsec';
 // import Procheck from './componenets/Procheck';
 // import Profile from './componenets/Profile';
@@ -31,7 +32,8 @@ function App() {
     {/* <Quizsec /> */}
     {/* <ProfileUpdate / */}
     {/* <ProfileUpdate /> */}
-    <Check />
+    {/* <Check /> */}
+    <Chart/>
     </>
   );
 }
