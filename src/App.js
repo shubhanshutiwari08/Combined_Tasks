@@ -1,4 +1,5 @@
 import './App.css';
+// import Analytics from './componenets/Analytics';
 // import Content from './componenets/Content';
 import Chart from './componenets/Chart';
 // import Check from './componenets/Check';
@@ -35,6 +36,7 @@ function App() {
     {/* <ProfileUpdate /> */}
     {/* <Check /> */}
     <Chart/>
+    {/* <Analytics /> */}
     {/* <Content /> */}
     </>
   );
