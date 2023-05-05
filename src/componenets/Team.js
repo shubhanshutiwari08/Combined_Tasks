@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useState, } from 'react'
 import user from '../assets/user.jpg'
 
 export default function Team() {
+
+    const [buttonText, setButtonText] = useState('Follow');
+
+    function handleClick() {
+      setButtonText('Message');
+    }
+
   return (
     <div className='bg-[#1e2736] h-full'>
       <div className="max-w-[1240px] mx-auto  min-h-screen">
@@ -17,7 +24,7 @@ export default function Team() {
                     <h1 className='text-white lg:text-lg sm:text-xl '>Adam Miles</h1>
                     <h1 className='text-white lg:text-lg sm:text-xl '>Rank: <span className='text-cyan-500 text-lg'>1267</span> </h1>
                 </div>
-                <button className='bg-[#01b5ff] text-white text-xl font-semibold p-3 shadow-xl w-full rounded-md ' >Message</button>
+                <button className='bg-[#01b5ff]  text-white text-xl font-semibold p-3 shadow-xl w-full rounded-md ' onClick={handleClick} >{buttonText}</button>
             </div>
 
             {/* 2 */}
@@ -27,74 +34,7 @@ export default function Team() {
                     <h1 className='text-white lg:text-lg sm:text-xl '>Adam Miles</h1>
                     <h1 className='text-white lg:text-lg sm:text-xl '>Rank: <span className='text-cyan-500 text-lg'>1267</span> </h1>
                 </div>
-                <button className='bg-[#01b5ff] text-white text-xl font-semibold p-3 shadow-xl w-full rounded-md ' >Message</button>
-            </div>
-
-            {/* 3 */}
-            <div className='bg-[#333e50] flex flex-col justify-evenly p-3 items-center  shadow-lg rounded-2xl space-y-5 '>
-                <img className='w-40 h-40 lg:w-56 lg:h-56 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full shadow-slate-900 shadow-lg' src={user} alt="" />
-                <div className='flex flex-col justify-center'>
-                    <h1 className='text-white lg:text-lg sm:text-xl '>Adam Miles</h1>
-                    <h1 className='text-white lg:text-lg sm:text-xl '>Rank: <span className='text-cyan-500 text-lg'>1267</span> </h1>
-                </div>
-                <button className='bg-[#01b5ff] text-white text-xl font-semibold p-3 shadow-xl w-full rounded-md ' >Message</button>
-            </div>
-            {/* 4 */}
-            <div className='bg-[#333e50] flex flex-col justify-evenly p-3 items-center  shadow-lg rounded-2xl space-y-5 '>
-                <img className='w-40 h-40 lg:w-56 lg:h-56 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full shadow-slate-900 shadow-lg' src={user} alt="" />
-                <div className='flex flex-col justify-center'>
-                    <h1 className='text-white lg:text-lg sm:text-xl '>Adam Miles</h1>
-                    <h1 className='text-white lg:text-lg sm:text-xl '>Rank: <span className='text-cyan-500 text-lg'>1267</span> </h1>
-                </div>
-                <button className='bg-[#01b5ff] text-white text-xl font-semibold p-3 shadow-xl w-full rounded-md ' >Message</button>
-            </div>
-            {/* 5 */}
-            <div className='bg-[#333e50] flex flex-col justify-evenly p-3 items-center  shadow-lg rounded-2xl space-y-5 '>
-                <img className='w-40 h-40 lg:w-56 lg:h-56 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full shadow-slate-900 shadow-lg' src={user} alt="" />
-                <div className='flex flex-col justify-center'>
-                    <h1 className='text-white lg:text-lg sm:text-xl '>Adam Miles</h1>
-                    <h1 className='text-white lg:text-lg sm:text-xl '>Rank: <span className='text-cyan-500 text-lg'>1267</span> </h1>
-                </div>
-                <button className='bg-[#01b5ff] text-white text-xl font-semibold p-3 shadow-xl w-full rounded-md ' >Message</button>
-            </div>
-            {/* 6 */}
-            <div className='bg-[#333e50] flex flex-col justify-evenly p-3 items-center  shadow-lg rounded-2xl space-y-5 '>
-                <img className='w-40 h-40 lg:w-56 lg:h-56 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full shadow-slate-900 shadow-lg' src={user} alt="" />
-                <div className='flex flex-col justify-center'>
-                    <h1 className='text-white lg:text-lg sm:text-xl '>Adam Miles</h1>
-                    <h1 className='text-white lg:text-lg sm:text-xl '>Rank: <span className='text-cyan-500 text-lg'>1267</span> </h1>
-                </div>
-                <button className='bg-[#01b5ff] text-white text-xl font-semibold p-3 shadow-xl w-full rounded-md ' >Message</button>
-            </div>
-
-            {/* 7 */}
-            <div className='bg-[#333e50] flex flex-col justify-evenly p-3 items-center  shadow-lg rounded-2xl space-y-5 '>
-                <img className='w-40 h-40 lg:w-56 lg:h-56 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full shadow-slate-900 shadow-lg' src={user} alt="" />
-                <div className='flex flex-col justify-center'>
-                    <h1 className='text-white lg:text-lg sm:text-xl '>Adam Miles</h1>
-                    <h1 className='text-white lg:text-lg sm:text-xl '>Rank: <span className='text-cyan-500 text-lg'>1267</span> </h1>
-                </div>
-                <button className='bg-[#01b5ff] text-white text-xl font-semibold p-3 shadow-xl w-full rounded-md ' >Message</button>
-            </div>
-
-            {/* 8 */}
-            <div className='bg-[#333e50] flex flex-col justify-evenly p-3 items-center  shadow-lg rounded-2xl space-y-5 '>
-                <img className='w-40 h-40 lg:w-56 lg:h-56 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full shadow-slate-900 shadow-lg' src={user} alt="" />
-                <div className='flex flex-col justify-center'>
-                    <h1 className='text-white lg:text-lg sm:text-xl '>Adam Miles</h1>
-                    <h1 className='text-white lg:text-lg sm:text-xl '>Rank: <span className='text-cyan-500 text-lg'>1267</span> </h1>
-                </div>
-                <button className='bg-[#01b5ff] text-white text-xl font-semibold p-3 shadow-xl w-full rounded-md ' >Message</button>
-            </div>
-
-            {/* 9 */}
-            <div className='bg-[#333e50] flex flex-col justify-evenly p-3 items-center  shadow-lg rounded-2xl space-y-5 '>
-                <img className='w-40 h-40 lg:w-56 lg:h-56 sm:w-56 sm:h-56 md:w-64 md:h-64 rounded-full shadow-slate-900 shadow-lg' src={user} alt="" />
-                <div className='flex flex-col justify-center'>
-                    <h1 className='text-white lg:text-lg sm:text-xl '>Adam Miles</h1>
-                    <h1 className='text-white lg:text-lg sm:text-xl '>Rank: <span className='text-cyan-500 text-lg'>1267</span> </h1>
-                </div>
-                <button className='bg-[#01b5ff] text-white text-xl font-semibold p-3 shadow-xl w-full rounded-md ' >Message</button>
+                <button className='bg-[#01b5ff]  text-white text-xl font-semibold p-3 shadow-xl w-full rounded-md ' onClick={handleClick}  >{buttonText}</button>
             </div>
             
         </div>
