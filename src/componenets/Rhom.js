@@ -4,8 +4,8 @@ import "react-circular-progressbar/dist/styles.css";
 // import './trap.css'
 
 export default function Rhom() {
-  const percentage1 = 80;
-  const percentage2 = 60;
+  const percentage1 = 60;
+  const percentage2 = 70;
   return (
     <>
     <div className='bg-[#1e2736]'>
@@ -19,33 +19,36 @@ export default function Rhom() {
                   <p className="text-cyan-400 font-semibold text-xs md:text-xl lg:text-2xl">
                     Java Variable
                   </p>
-                  <div className="w-12 relative  font-bold shadow-2xl text-[#01B6FF]">
+                  <div className="w-[3.2rem] relative  font-bold shadow-2xl text-[#01B6FF]">
                     <CircularProgressbar
                       value={percentage1}
                       text={`${percentage1}%`}
                       styles={buildStyles({
                         pathColor: `#00BFFF`,
+                        textSize: '32px',
                         textColor: '#00BFFF',
-                        trailColor: '#d6d6d6',
+                        trailColor: 'transparent',
                         backgroundColor: '#3e98c7',
+                        width:'full',
                      })}
                     />
-                    <p className="text-[8px] lg:text-xs absolute -top-[0.2rem] right-[2.4rem]  smm:top-0     smm:right-[97%] text-[#00FF2A]">
+                    <p className="text-[10px] lg:text-sm absolute -top-[0.2rem] right-[2.4rem]  smm:top-0     smm:right-[97%] text-[#00FF2A]">
                       Attempted 
                     </p>
                   </div>
-                  <div className="w-12 relative font-bold shadow-2xl text-[#01B6FF]">
+                  <div className="w-[3.2rem] relative font-bold shadow-2xl text-[#01B6FF]">
                     <CircularProgressbar
                       value={percentage2}
                       text={`${percentage2}%`}
                       styles={buildStyles({
                          pathColor: `#00BFFF`,
                          textColor: '#00BFFF',
-                         trailColor: '#d6d6d6',
-                         backgroundColor: '#3e98c7',
+                         trailColor: 'transparent',
+                         backgroundColor: '#000000',
+                         textSize: '32px',
                       })}
                     />
-                    <p className="text-[8px] lg:text-xs absolute -top-[0.2rem] right-[2.4rem]  smm:top-0 smm:right-[97%] text-[#01B6FF]">
+                    <p className="text-[10px] lg:text-sm absolute -top-[0.2rem] right-[2.4rem]  smm:top-0 smm:right-[97%] text-cyan-500">
                       Questions
                     </p>
                   </div>
@@ -69,33 +72,35 @@ export default function Rhom() {
                   <p className="text-cyan-400 font-semibold text-xs md:text-xl lg:text-2xl">
                     Java Variable
                   </p>
-                  <div className="w-12 relative  font-bold shadow-2xl text-[#01B6FF]">
+                  <div className="w-[3.2rem] relative  font-bold shadow-2xl text-[#01B6FF]">
                     <CircularProgressbar
                       value={percentage1}
                       text={`${percentage1}%`}
                       styles={buildStyles({
                         pathColor: `#00BFFF`,
                         textColor: '#00BFFF',
-                        trailColor: '#d6d6d6',
+                        trailColor: 'transparent',
                         backgroundColor: '#3e98c7',
+                        textSize: '32px',
                      })}
                     />
-                    <p className="text-[8px] lg:text-xs absolute -top-[0.2rem] right-[2.4rem]  smm:top-0     smm:right-[97%] text-[#00FF2A]">
+                    <p className="text-[10px] lg:text-sm absolute -top-[0.2rem] right-[2.4rem]  smm:top-0     smm:right-[97%] text-[#00FF2A]">
                       Attempted 
                     </p>
                   </div>
-                  <div className="w-12 relative font-bold shadow-2xl text-[#01B6FF]">
+                  <div className="w-[3.2rem] relative font-bold shadow-2xl text-[#01B6FF]">
                     <CircularProgressbar
                       value={percentage2}
                       text={`${percentage2}%`}
                       styles={buildStyles({
                          pathColor: `#00BFFF`,
                          textColor: '#00BFFF',
-                         trailColor: '#d6d6d6',
+                         trailColor: 'transparent',
                          backgroundColor: '#3e98c7',
+                         textSize: '32px',
                       })}
                     />
-                    <p className="text-[8px] lg:text-xs absolute -top-[0.2rem] right-[2.4rem]  smm:top-0 smm:right-[97%] text-[#01B6FF]">
+                    <p className="text-[10px] lg:text-sm absolute -top-[0.2rem] right-[2.4rem]  smm:top-0 smm:right-[97%] text-[#01B6FF]">
                       Questions
                     </p>
                   </div>
@@ -118,33 +123,35 @@ export default function Rhom() {
                   <p className="text-cyan-400 font-semibold text-xs md:text-xl lg:text-2xl">
                     Java Variable
                   </p>
-                  <div className="w-12 relative  font-bold shadow-2xl text-[#01B6FF]">
+                  <div className="w-[3.2rem] relative  font-bold shadow-2xl text-[#01B6FF]">
                     <CircularProgressbar
                       value={percentage1}
                       text={`${percentage1}%`}
                       styles={buildStyles({
                         pathColor: `#00BFFF`,
                         textColor: '#00BFFF',
-                        trailColor: '#d6d6d6',
+                        trailColor: 'transparent',
                         backgroundColor: '#3e98c7',
+                        textSize: '32px',
                      })}
                     />
-                    <p className="text-[8px] lg:text-xs absolute -top-[0.2rem] right-[2.4rem]  smm:top-0     smm:right-[97%] text-[#00FF2A]">
+                    <p className="text-[10px] lg:text-sm absolute -top-[0.2rem] right-[2.4rem]  smm:top-0     smm:right-[97%] text-[#00FF2A]">
                       Attempted 
                     </p>
                   </div>
-                  <div className="w-12 relative font-bold shadow-2xl text-[#01B6FF]">
+                  <div className="w-[3.2rem] relative font-bold shadow-2xl text-[#01B6FF]">
                     <CircularProgressbar
                       value={percentage2}
                       text={`${percentage2}%`}
                       styles={buildStyles({
                          pathColor: `#00BFFF`,
                          textColor: '#00BFFF',
-                         trailColor: '#d6d6d6',
+                         trailColor: 'transparent',
                          backgroundColor: '#3e98c7',
+                         textSize: '32px',
                       })}
                     />
-                    <p className="text-[8px] lg:text-xs absolute -top-[0.2rem] right-[2.4rem]  smm:top-0 smm:right-[97%] text-[#01B6FF]">
+                    <p className="text-[10px] lg:text-sm absolute -top-[0.2rem] right-[2.4rem]  smm:top-0 smm:right-[97%] text-[#01B6FF]">
                       Questions
                     </p>
                   </div>
@@ -166,33 +173,35 @@ export default function Rhom() {
                   <p className="text-cyan-400 font-semibold text-xs md:text-xl lg:text-2xl">
                     Java Variable
                   </p>
-                  <div className="w-12 relative  font-bold shadow-2xl text-[#01B6FF]">
+                  <div className="w-[3.2rem] relative  font-bold shadow-2xl text-[#01B6FF]">
                     <CircularProgressbar
                       value={percentage1}
                       text={`${percentage1}%`}
                       styles={buildStyles({
                         pathColor: `#00BFFF`,
                         textColor: '#00BFFF',
-                        trailColor: '#d6d6d6',
+                        trailColor: 'transparent',
                         backgroundColor: '#3e98c7',
+                        textSize: '32px',
                      })}
                     />
-                    <p className="text-[8px] lg:text-xs absolute -top-[0.2rem] right-[2.4rem]  smm:top-0     smm:right-[97%] text-[#00FF2A]">
+                    <p className="text-[10px] lg:text-sm absolute -top-[0.2rem] right-[2.4rem]  smm:top-0     smm:right-[97%] text-[#00FF2A]">
                       Attempted 
                     </p>
                   </div>
-                  <div className="w-12 relative font-bold shadow-2xl text-[#01B6FF]">
+                  <div className="w-[3.2rem] relative font-bold shadow-2xl text-[#01B6FF]">
                     <CircularProgressbar
                       value={percentage2}
                       text={`${percentage2}%`}
                       styles={buildStyles({
                          pathColor: `#00BFFF`,
                          textColor: '#00BFFF',
-                         trailColor: '#d6d6d6',
+                         trailColor: 'transparent',
                          backgroundColor: '#3e98c7',
+                         textSize: '32px',
                       })}
                     />
-                    <p className="text-[8px] lg:text-xs absolute -top-[0.2rem] right-[2.4rem]  smm:top-0 smm:right-[97%] text-[#01B6FF]">
+                    <p className="text-[10px] lg:text-sm absolute -top-[0.2rem] right-[2.4rem]  smm:top-0 smm:right-[97%] text-[#01B6FF]">
                       Questions
                     </p>
                   </div>
@@ -214,33 +223,35 @@ export default function Rhom() {
                   <p className="text-cyan-400 font-semibold text-xs md:text-xl lg:text-2xl">
                     Java Variable
                   </p>
-                  <div className="w-12 relative  font-bold shadow-2xl text-[#01B6FF]">
+                  <div className="w-[3.2rem] relative  font-bold shadow-2xl text-[#01B6FF]">
                     <CircularProgressbar
                       value={percentage1}
                       text={`${percentage1}%`}
                       styles={buildStyles({
                         pathColor: `#00BFFF`,
                         textColor: '#00BFFF',
-                        trailColor: '#d6d6d6',
+                        trailColor: 'transparent',
                         backgroundColor: '#3e98c7',
+                        textSize: '32px',
                      })}
                     />
-                    <p className="text-[8px] lg:text-xs absolute -top-[0.2rem] right-[2.4rem]  smm:top-0     smm:right-[97%] text-[#00FF2A]">
+                    <p className="text-[10px] lg:text-sm absolute -top-[0.2rem] right-[2.4rem]  smm:top-0     smm:right-[97%] text-[#00FF2A]">
                       Attempted 
                     </p>
                   </div>
-                  <div className="w-12 relative font-bold shadow-2xl text-[#01B6FF]">
+                  <div className="w-[3.2rem] relative font-bold shadow-2xl text-[#01B6FF]">
                     <CircularProgressbar
                       value={percentage2}
                       text={`${percentage2}%`}
                       styles={buildStyles({
                          pathColor: `#00BFFF`,
                          textColor: '#00BFFF',
-                         trailColor: '#d6d6d6',
+                         trailColor: 'transparent',
                          backgroundColor: '#3e98c7',
+                         textSize: '32px',
                       })}
                     />
-                    <p className="text-[8px] lg:text-xs absolute -top-[0.2rem] right-[2.4rem]  smm:top-0 smm:right-[97%] text-[#01B6FF]">
+                    <p className="text-[10px] lg:text-sm absolute -top-[0.2rem] right-[2.4rem]  smm:top-0 smm:right-[97%] text-[#01B6FF]">
                       Questions
                     </p>
                   </div>

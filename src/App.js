@@ -1,7 +1,9 @@
 import './App.css';
+import Team from './componenets/Team';
+// import Spinner from './componenets/Spinner';
 // import Analytics from './componenets/Analytics';
 // import Content from './componenets/Content';
-import Chart from './componenets/Chart';
+// import Chart from './componenets/Chart';
 // import Check from './componenets/Check';
 // import Quizsec from './componenets/Quizsec';
 // import Procheck from './componenets/Procheck';
@@ -35,9 +37,11 @@ function App() {
     {/* <ProfileUpdate / */}
     {/* <ProfileUpdate /> */}
     {/* <Check /> */}
-    <Chart/>
+    {/* <Chart/> */}
     {/* <Analytics /> */}
     {/* <Content /> */}
+    {/* <Spinner/> */}
+    <Team />
     </>
   );
 }
