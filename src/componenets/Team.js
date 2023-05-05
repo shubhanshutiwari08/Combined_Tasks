@@ -1,12 +1,13 @@
-import React, { useState, } from 'react'
+import React, {  useState, } from 'react'
 import user from '../assets/user.jpg'
 
 export default function Team() {
 
     const [buttonText, setButtonText] = useState('Follow');
-
+    const [changeColor,setChangeColor] = useState(false)
     function handleClick() {
       setButtonText('Message');
+      setChangeColor(!changeColor)
     }
 
   return (
@@ -24,7 +25,7 @@ export default function Team() {
                     <h1 className='text-white lg:text-lg sm:text-xl '>Adam Miles</h1>
                     <h1 className='text-white lg:text-lg sm:text-xl '>Rank: <span className='text-cyan-500 text-lg'>1267</span> </h1>
                 </div>
-                <button className='bg-[#01b5ff]  text-white text-xl font-semibold p-3 shadow-xl w-full rounded-md ' onClick={handleClick} >{buttonText}</button>
+                <button className={` text-white text-xl font-semibold p-3 shadow-xl w-full rounded-md ${(changeColor=== true)?'bg-[#01ff73b9]': 'bg-[#01b5ff]'} `} onClick={handleClick}>{buttonText}</button>
             </div>
 
             {/* 2 */}
@@ -34,7 +35,7 @@ export default function Team() {
                     <h1 className='text-white lg:text-lg sm:text-xl '>Adam Miles</h1>
                     <h1 className='text-white lg:text-lg sm:text-xl '>Rank: <span className='text-cyan-500 text-lg'>1267</span> </h1>
                 </div>
-                <button className='bg-[#01b5ff]  text-white text-xl font-semibold p-3 shadow-xl w-full rounded-md ' onClick={handleClick}  >{buttonText}</button>
+                <button className={` text-white text-xl font-semibold p-3 shadow-xl w-full rounded-md ${(changeColor=== true)?'bg-[#01ff73b9]': 'bg-[#01b5ff]'} `} onClick={handleClick}>{buttonText}</button>
             </div>
             
         </div>
