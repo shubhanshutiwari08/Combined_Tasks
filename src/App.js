@@ -1,5 +1,6 @@
 import './App.css';
-import Team from './componenets/Team';
+import Payement from './componenets/Payement';
+// import Team from './componenets/Team';
 // import Spinner from './componenets/Spinner';
 // import Analytics from './componenets/Analytics';
 // import Content from './componenets/Content';
@@ -41,7 +42,8 @@ function App() {
     {/* <Analytics /> */}
     {/* <Content /> */}
     {/* <Spinner/> */}
-    <Team />
+    {/* <Team /> */}
+    <Payement />
     </>
   );
 }
