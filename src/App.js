@@ -1,6 +1,6 @@
 import './App.css';
-import Payement from './componenets/Payement';
-// import Team from './componenets/Team';
+// import Payement from './componenets/Payement';
+// import Team from './Final/Card';
 // import Spinner from './componenets/Spinner';
 // import Analytics from './componenets/Analytics';
 // import Content from './componenets/Content';
@@ -9,14 +9,14 @@ import Payement from './componenets/Payement';
 // import Quizsec from './componenets/Quizsec';
 // import Procheck from './componenets/Procheck';
 // import Profile from './componenets/Profile';
-// import Rhom from './componenets/Rhom';
+import Rhom from './Final/Solve';
 // import Home from './componenets/Home';
 // import Progress from './componenets/Progress';
 // import ProfileUpdate from './componenets/ProfileUpdate';
 
 // import Chat from './componenets/Chat';
 // import Sidebar from './componenets/Sidebar';
-// import Qnasec from './componenets/Qnasection';
+// import Qnasec from './Final/QuestionSelection';
 // import {AiOutlineCaretUp ,AiOutlineCaretDown} from "react-icons/ai";
 // import imgone from './assets/java.png'
 // import down from './assets/down.png'
@@ -31,7 +31,7 @@ function App() {
     {/* <Sidebar/> */}
     {/* <Home/> */}
     {/* <Profile /> */}
-    {/* <Rhom/> */}
+    <Rhom/>
     {/* <Progress /> */}
     {/* <Procheck /> */}
     {/* <Quizsec /> */}
@@ -43,7 +43,7 @@ function App() {
     {/* <Content /> */}
     {/* <Spinner/> */}
     {/* <Team /> */}
-    <Payement />
+    {/* <Payement /> */}
     </>
   );
 }

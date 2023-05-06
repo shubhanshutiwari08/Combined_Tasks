@@ -4,15 +4,14 @@ import gift from "../assets/gift.png";
 
 export default function Payement() {
   return (
-    <div className="bg-[#363844] h-screen ">
+    <div className="bg-black h-full md:bg-[#363844] ">
       <div className="max-w-[1240px] mx-auto  min-h-screen ">
-        <div className="flex justify-center  text-white ">
+        <div className="grid grid-rows-2 justify-center  text-white md:grid-cols-2 ">
           {/* Left Side */}
           <div className="bg-black w-full text-white p-8 flex flex-col space-y-8 divide-y-2 divide-gray-500 md:shadow-lg">
             <div className="flex flex-col space-y-8 ">
-              <div className="flex space-x-4 items-center ">
-                <div><img className="w-24 h-24 rounded-full" src={user} alt="" /></div>
-                
+              <div className="flex space-x-4 items-center md:flex md:justify-center  ">
+                <img className="w-24 h-24 rounded-full" src={user} alt="" />
                 <h1 className="text-center text-2xl font-bold">Metafy</h1>
               </div>
               {/* <div className='flex space-x-3'>
@@ -79,8 +78,8 @@ export default function Payement() {
             </div>
           </div>
           {/* Right Side */}
-          <div className="bg-[#15141a] w-2/4  text-white p-8  flex flex-col space-y-5  ">
-            <div className="flex space-x-4">
+          <div className="bg-[#15141a] w-full text-white p-8  flex flex-col space-y-5  ">
+            <div className="flex space-x-4 sm:hidden">
               <div className="bg-gray-50/10 p-1 rounded-full">
                 <img className="w-12 h-12 rounded-full" src={user} alt="" />
               </div>
