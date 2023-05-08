@@ -1,6 +1,7 @@
 import React from 'react'
 import user from '../assets/user.jpg'
 
+
 export default function Chat() {
   return (
     <div className='bg-white min-h-screen'>
@@ -95,6 +96,10 @@ export default function Chat() {
               </div>            
             </div>
           </div>
+
+
+
+
           <div className='flex space-x-5'>
             <div className='w-[500px] h-[500px] bg-white drop-shadow-lg mt-16 rounded-lg'>
               <div className='flex'>

@@ -9,12 +9,12 @@ import './App.css';
 // import Quizsec from './componenets/Quizsec';
 // import Procheck from './componenets/Procheck';
 // import Profile from './componenets/Profile';
-import Rhom from './Final/Solve';
+// import Rhom from './Final/Solve';
 // import Home from './componenets/Home';
 // import Progress from './componenets/Progress';
 // import ProfileUpdate from './componenets/ProfileUpdate';
 
-// import Chat from './componenets/Chat';
+import Chat from './componenets/Chatupdate';
 // import Sidebar from './componenets/Sidebar';
 // import Qnasec from './Final/QuestionSelection';
 // import {AiOutlineCaretUp ,AiOutlineCaretDown} from "react-icons/ai";
@@ -27,11 +27,11 @@ function App() {
   return (
        <>
     {/* <Qnasec/> */}
-    {/* <Chat /> */}
+    <Chat />
     {/* <Sidebar/> */}
     {/* <Home/> */}
     {/* <Profile /> */}
-    <Rhom/>
+    {/* <Rhom/> */}
     {/* <Progress /> */}
     {/* <Procheck /> */}
     {/* <Quizsec /> */}
