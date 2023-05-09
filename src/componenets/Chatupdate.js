@@ -14,7 +14,7 @@ export default function Chatupdate() {
       <div className="max-w-[1240px] mx-auto">
         <div className="grid xl:grid-cols-4 gap-4 md:grid-cols-3 sm:grid-cols-2">
           {/* Left */}
-          <div className="flex flex-col space-y-5">
+          <div className="flex flex-col space-y-5 md:col-span-1 sm:col-span-2">
             {/* Chat */}
             <div className="bg-gradient-to-r from-[#E100FF] to-[#7F00FF]  p-4 items-center rounded-xl shadow-lg flex justify-between">
               <h1 className="text-2xl font-bold text-white">Chats</h1>
@@ -249,7 +249,7 @@ export default function Chatupdate() {
                 <div class="messages flex-1 overflow-auto">
                   <div class="message mb-4 flex">
                     <div class="flex-1 px-2">
-                      <div class="inline-block bg-gray-300 rounded-full p-2 px-6 text-gray-700">
+                      <div class="inline-block bg-[#eeeafb] rounded-full p-2 px-6 text-gray-700">
                         <span>Hii</span>
                       </div>
                       <div class="pl-4">
@@ -259,7 +259,7 @@ export default function Chatupdate() {
                   </div>
                   <div class="message mb-4 flex">
                     <div class="flex-1 px-2">
-                      <div class="inline-block bg-gray-300 rounded-full p-2 px-6 text-gray-700">
+                      <div class="inline-block bg-[#eeeafb] rounded-full p-2 px-6 text-gray-700">
                         <span>Hello how are you?</span>
                       </div>
                       <div class="pl-4">
@@ -280,7 +280,7 @@ export default function Chatupdate() {
                   </div>
                   <div class="message mb-4 flex">
                     <div class="flex-1 px-2">
-                      <div class="inline-block bg-gray-300 rounded-full p-2 px-6 text-gray-700">
+                      <div class="inline-block bg-[#eeeafb] rounded-full p-2 px-6 text-gray-700">
                         <span>I am also doing good whats going on?</span>
                       </div>
                       <div class="pl-4">
@@ -308,7 +308,7 @@ export default function Chatupdate() {
           </div>
 
           {/* Right */}
-          <div className="bg-white shadow-xl rounded-xl p-6 flex flex-col space-y-5 justify-between sm: ">
+          <div className="bg-white shadow-xl rounded-xl p-6 flex flex-col space-y-5 justify-between lg:col-span-1 sm:col-span-3 md:col-span-2">
             <h1 className="text-2xl font-bold">Info Details</h1>
             <div className="flex flex-col justify-center items-center">
               <img
