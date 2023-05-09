@@ -9,6 +9,13 @@ import { AiOutlineSmile, AiOutlineLink } from "react-icons/ai";
 import { BsMic } from "react-icons/bs";
 
 export default function Chatupdate() {
+  function showchat(){
+    document.getElementById('chat').style.display='block';
+    // document.getElementById('info').style.display='block';
+  }
+  function info(){
+    document.getElementById('info').style.display='block';
+  }
   return (
     <section className="bg-white ">
       <div className="max-w-[1240px] mx-auto">
@@ -150,7 +157,7 @@ export default function Chatupdate() {
             </div>
             {/* Contacts */}
             <div className="bg-white drop-shadow-lg shadow-lg mt-2   p-3  rounded-2xl space-y-3">
-              <div className="flex p-2 items-center">
+              <div className="flex p-2 items-center cursor-pointer" onClick={showchat}>
                 <img className="w-14 h-14 rounded-full" src={user} alt="" />
                 <div className="flex justify-between w-full">
                   <div className="p-1">
@@ -168,7 +175,7 @@ export default function Chatupdate() {
                 </div>
               </div>
               <hr />
-              <div className="flex p-1 items-center">
+              <div className="flex p-1 items-center cursor-pointer">
                 <img className="w-14 h-14 rounded-full" src={user} alt="" />
                 <div className="flex justify-between w-full">
                   <div className="p-1">
@@ -186,7 +193,7 @@ export default function Chatupdate() {
                 </div>
               </div>
               <hr />
-              <div className="flex p-1 items-center w-full">
+              <div className="flex p-1 items-center w-full cursor-pointer">
                 <img className="w-14 h-14 rounded-full" src={user} alt="" />
                 <div className="flex justify-between w-full">
                   <div className="p-1">
@@ -220,7 +227,7 @@ export default function Chatupdate() {
           </div>
 
           {/* Middle */}
-          <div className="bg-white shadow-xl rounded-xl col-span-2  items-center">
+          <div className="bg-white shadow-xl rounded-xl col-span-2  items-center" style={{display:'none'}} id="chat">
             <div class="flex flex-col space-y-10 p-5">
               <div class="col-span-3 ">
                 <div className="flex flex-col">
@@ -237,9 +244,9 @@ export default function Chatupdate() {
                       </div>
                     </div>
                     <div className="flex items-center space-x-5 ">
-                      <FaPhoneAlt />
-                      <FiVideo />
-                      <MdOutlineSettings />
+                      <FaPhoneAlt className="cursor-pointer" />
+                      <FiVideo className="cursor-pointer" />
+                      <MdOutlineSettings className="cursor-pointer" onClick={info} />
                     </div>
                   </div>
                 </div>
@@ -308,7 +315,7 @@ export default function Chatupdate() {
           </div>
 
           {/* Right */}
-          <div className="bg-white shadow-xl rounded-xl p-6 flex flex-col space-y-5 justify-between lg:col-span-1 sm:col-span-3 md:col-span-2">
+          <div className="bg-white shadow-xl rounded-xl p-6 flex flex-col space-y-5 justify-between lg:col-span-1 sm:col-span-3 md:col-span-2" style={{display:'none'}} id="info">
             <h1 className="text-2xl font-bold">Info Details</h1>
             <div className="flex flex-col justify-center items-center">
               <img
