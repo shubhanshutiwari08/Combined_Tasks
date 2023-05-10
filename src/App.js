@@ -15,7 +15,8 @@ import './App.css';
 // import ProfileUpdate from './componenets/ProfileUpdate';
 
 // import Chat from './componenets/Chatupdate';
-import Job from './componenets/Job';
+// import Job from './componenets/Job';
+import Jobform from './componenets/Jobform';
 // import Sidebar from './componenets/Sidebar';
 // import Qnasec from './Final/QuestionSelection';
 // import {AiOutlineCaretUp ,AiOutlineCaretDown} from "react-icons/ai";
@@ -45,7 +46,8 @@ function App() {
     {/* <Spinner/> */}
     {/* <Team /> */}
     {/* <Payement /> */}
-    <Job />
+    {/* <Job /> */}
+    <Jobform />
     </>
   );
 }
