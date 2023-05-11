@@ -15,6 +15,9 @@ import './App.css';
 // import Progress from './componenets/Progress';
 // import ProfileUpdate from './componenets/ProfileUpdate';
 
+// import Map from './componenets/Map';
+
+// import Multiselctcheck from './componenets/Multiselectcheck'    //For multiple checks
 // import Chat from './componenets/Chatupdate';
 // import Job from './componenets/Job';
 import Jobform from './componenets/Jobform';
@@ -50,6 +53,8 @@ function App() {
     {/* <Job /> */}
     <Jobform />
     {/* <Selectmultidropdown /> */}
+    {/* <Map /> */}
+    {/* <Multiselctcheck /> */}
     </>
   );
 }

@@ -1,19 +1,76 @@
-import React, { useState } from "react";
-import Multiselect from "multiselect-react-dropdown";
+import React from "react";
+import Multiselectcheck from "./Multiselectcheck";
+// import Multiselect from "multiselect-react-dropdown";
+// import {MultiSelectComponent} from '@syncfusion/ej2-react-dropdowns';
 import { MdAdd, MdMenu } from "react-icons/md";
+// import user from "../assets/user.jpg";
+import {
+  FaBold,
+  FaItalic,
+  FaAlignLeft,
+  FaAlignCenter,
+  FaAlignRight,
+  FaLink,
+} from "react-icons/fa";
+import { AiOutlineUnderline, AiOutlineBgColors } from "react-icons/ai";
 import { BsFillBriefcaseFill } from "react-icons/bs";
 import { SiSimpleanalytics } from "react-icons/si";
 
 export default function Jobform() {
-  const [options] = useState([
-    "Mihir Sharma",
-    "Rajeev Sharma",
-    "Ankit Sharma",
-    "Pulkit Singh",
-  ]);
-  const [skills] = useState([
-    "C++","HTML","Python",
-  ]);
+  // const [selectedPeople, setSelectedPeople] = useState([]);
+  // function handlePersonSelect(person) {
+  //   if (selectedPeople.includes(person)) {
+  //     setSelectedPeople(selectedPeople.filter(p => p !== person));
+  //   } else {
+  //     setSelectedPeople([...selectedPeople, person]);
+  //   }
+  // }
+  // const [options] = useState([
+  //   "Mihir Sharma",
+  //   "Rajeev Sharma",
+  //   "Ankit Sharma",
+  //   "Pulkit Singh",
+  // ]);
+  // const [skills] = useState(["C++", "HTML", "Python"]);
+  // const [val,setVal] = useState('')
+  // const hiringMembers = ['Vinnet ','Mahesh','Shivam','Manoj']
+
+  // NEW
+  // const people = [
+  //   {
+  //     name: "John Doe",
+  //     image: "https://picsum.photos/200/300",
+  //   },
+  //   {
+  //     name: "Jane Smith",
+  //     image: "https://picsum.photos/200/300",
+  //   },
+  //   {
+  //     name: "Bob Johnson",
+  //     image: "https://picsum.photos/200/300",
+  //   },
+  // ];
+
+  // const options = people.map((person) => ({
+  //   value: person.name,
+  //   label: (
+  //     <div className="flex items-center">
+  //       <img
+  //         className="w-10 h-10 rounded-full"
+  //         src={person.image}
+  //         alt={person.name}
+  //       />
+  //       <span>{person.name}</span>
+  //     </div>
+  //   ),
+  // }));
+
+  // const [selectedValues, setSelectedValues] = useState([]);
+
+  // function handleSelect(selectedList, selectedItem) {
+  //   setSelectedValues(selectedList);
+  // }
+  // NEW Ends
 
   return (
     <div className="bg-[#eee9fd] h-full">
@@ -58,7 +115,7 @@ export default function Jobform() {
             <h1>Job Details</h1>
             <form class="w-full">
               {/* NAme */}
-              <div class="flex flex-wrap -mx-3 mb-3">
+              <div class="flex flex-wrap -mx-3 mb-1">
                 <div class="w-full px-3">
                   <label
                     class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -67,7 +124,7 @@ export default function Jobform() {
                     Job Title
                   </label>
                   <input
-                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    class="appearance-none block w-full  text-gray-700 border border-gray-200 rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none "
                     id="grid-password"
                     type="text"
                     placeholder="Title here"
@@ -76,7 +133,7 @@ export default function Jobform() {
               </div>
               {/*  Name ends*/}
               {/* dept type */}
-              <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="flex flex-wrap -mx-3 mb-1">
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                   <label
                     class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -85,7 +142,7 @@ export default function Jobform() {
                     Department
                   </label>
                   <input
-                    class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    class="appearance-none block w-full  text-gray-700 border  rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                     id="grid-first-name"
                     type="text"
                     placeholder="department here"
@@ -100,7 +157,7 @@ export default function Jobform() {
                   </label>
                   <select
                     id="countries"
-                    class="bg-gray-200 border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    class=" border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3  dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   >
                     <option selected>Choose Job Type</option>
                     <option value="Full Time">Full Time</option>
@@ -111,7 +168,7 @@ export default function Jobform() {
               </div>
               {/* dept type ends */}
               {/* 2nd row */}
-              <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="flex flex-wrap -mx-3 mb-1">
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                   <label
                     class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -120,7 +177,7 @@ export default function Jobform() {
                     Recritment Quota
                   </label>
                   <input
-                    class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    class="appearance-none block w-full  text-gray-700 border  rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                     id="grid-first-name"
                     type="number"
                     placeholder="department here"
@@ -134,7 +191,7 @@ export default function Jobform() {
                     Recruitment period
                   </label>
                   <input
-                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    class="appearance-none block w-full  text-gray-700 border border-gray-200 rounded-lg py-3 px-4 leading-tight focus:outline-none "
                     id="grid-last-name"
                     type="date"
                     placeholder="Select Date"
@@ -143,7 +200,7 @@ export default function Jobform() {
               </div>
               {/* 2nd row ends */}
               {/* 3rd row */}
-              <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="flex flex-wrap -mx-3 mb-1">
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                   <label
                     class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -152,7 +209,7 @@ export default function Jobform() {
                     Experience in years
                   </label>
                   <input
-                    class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    class="appearance-none block w-full  text-gray-700 border  rounded-lg py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                     id="grid-first-name"
                     type="number"
                     placeholder="Experience here"
@@ -167,7 +224,7 @@ export default function Jobform() {
                   </label>
                   <select
                     id="countries"
-                    class="bg-gray-200 border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    class=" border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3  dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   >
                     <option selected>Selected Location</option>
                     <option value="Los Angles">Los Angles</option>
@@ -178,7 +235,7 @@ export default function Jobform() {
               </div>
               {/* 3rd row ends */}
               {/* Hiring */}
-              <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="flex flex-wrap -mx-3 mb-2">
                 <div class="w-full px-3">
                   <label
                     class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -186,7 +243,25 @@ export default function Jobform() {
                   >
                     Hiring Manager
                   </label>
-                  <div className="text-dark">
+                  <div className="w-full"> <Multiselectcheck /></div>
+                  
+                  {/* <div className="flex">
+                    <Multiselect
+                      options={options}
+                      selectedValues={selectedValues}
+                      onSelect={handleSelect}
+                      displayValue="label"
+                    />
+                  </div> */}
+
+                  {/* <Multiselect
+                    options={options}
+                    selectedValues={selectedPeople}
+                    onSelect={handleSelect}
+                    displayValue="label"
+                  /> */}
+
+                  {/* <div className="text-dark">
                     <Multiselect
                       isObject={false}
                       // onRemove={(event) => {
@@ -195,23 +270,24 @@ export default function Jobform() {
                       // onSelect={(event) => {
                       //   console.log(event);
                       // }}
-                      options={options}
+                      options={profiles}
                       showCheckbox
                     />
-                  </div>
+                  </div> */}
                 </div>
               </div>
               {/* Hiring ends */}
               {/* skills */}
-              <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="flex flex-wrap -mx-3 mb-3">
                 <div class="w-full px-3">
                   <label
-                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-3"
                     for="grid-password"
                   >
                     Skill Sets
                   </label>
-                  <div className="text-dark">
+                  <Multiselectcheck />
+                  {/* <div className="text-dark">
                     <Multiselect
                       isObject={false}
                       // onRemove={(event) => {
@@ -220,17 +296,45 @@ export default function Jobform() {
                       // onSelect={(event) => {
                       //   console.log(event);
                       // }}
-                      options={skills}
+                      options={hiringMembers}
                       showCheckbox
                     />
-                  </div>
+                  </div> */}
                 </div>
               </div>
               {/* skills ends */}
               {/* job desc */}
-              <label>Job Description</label>
-              <input type="text" id="input-resize" class="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 h-48 "></input>
+              <label
+                class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                for="grid-password"
+              >
+                Job Description
+              </label>
+              <div className="flex bg-slate-200 shadow-lg rounded-t-lg p-3 space-x-5 cursor-pointer ">
+                <FaBold />
+                <AiOutlineUnderline />
+                <FaItalic />
+                <FaAlignLeft />
+                <FaAlignCenter />
+                <FaAlignRight />
+                <FaLink />
+                <AiOutlineBgColors />
+              </div>
+              <textarea
+                class="peer block min-h-[auto] mb-3 w-full rounded-lg border-0 bg-white shadow-lg  px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear  data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none  "
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Description here"
+              ></textarea>
               {/* job desc ends */}
+              {/* Button */}
+              <div>
+                <button className="bg-indigo-500 p-2 w-20 rounded-lg text-white font-semibold">
+                  Post
+                </button>
+              </div>
+
+              {/* button ends */}
             </form>
 
             {/* it ends here */}
