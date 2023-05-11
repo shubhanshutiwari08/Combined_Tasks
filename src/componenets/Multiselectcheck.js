@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import Multiselect from 'multiselect-react-dropdown';
+
 // import user from '../assets/user.jpg'
 
 
@@ -33,9 +34,9 @@ const people = [
 const options = people.map(person => ({
   value: person.name,
   label: (
-    <div className='flex items-center space-x-5 '>
-      <img className='w-8 h-8 rounded-full' src={person.image} alt={person.name} />
-      <span>{person.name}</span>
+    <div className='flex items-center space-x-2  '>
+      <img className='w-8 h-8 rounded-full shadow-md' src={person.image} alt={person.name} />
+      <span className='text-gray-700'>{person.name}</span>
     </div>
   )
 }));
@@ -66,18 +67,19 @@ export default function Multiselectcheck() {
         optionContainer: {
           maxHeight: '200px',
           overflow: 'auto',
-          backgroundColor: '#fffff',
+          backgroundColor: '#ffffff',
+         
         },
         option: {
           backgroundColor: '#fffff',
           padding: '10px',
-          
         },
         optionLabel: {
           display: 'flex',
           alignItems: 'center',
           gap: '5px',
           backgroundColor:'cyan',
+          boxShadow: '10px',
         },
         optionImage: {
           width: '30px',
