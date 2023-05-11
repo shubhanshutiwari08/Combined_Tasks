@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import Multiselect from "multiselect-react-dropdown";
 import { MdAdd, MdMenu } from "react-icons/md";
 import { BsFillBriefcaseFill } from "react-icons/bs";
 import { SiSimpleanalytics } from "react-icons/si";
 
 export default function Jobform() {
+  const [options] = useState([
+    "Mihir Sharma",
+    "Rajeev Sharma",
+    "Ankit Sharma",
+    "Pulkit Singh",
+  ]);
+  const [skills] = useState([
+    "C++","HTML","Python",
+  ]);
+
   return (
     <div className="bg-[#eee9fd] h-full">
       <div className="max-w-[1200px] mx-auto  min-h-screen">
@@ -47,7 +58,7 @@ export default function Jobform() {
             <h1>Job Details</h1>
             <form class="w-full">
               {/* NAme */}
-              <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="flex flex-wrap -mx-3 mb-3">
                 <div class="w-full px-3">
                   <label
                     class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -79,7 +90,6 @@ export default function Jobform() {
                     type="text"
                     placeholder="department here"
                   />
-                  
                 </div>
                 <div class="w-full md:w-1/2 px-3">
                   <label
@@ -88,12 +98,15 @@ export default function Jobform() {
                   >
                     Job type
                   </label>
-                  <input
-                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="grid-last-name"
-                    type="text"
-                    placeholder="Job type"
-                  />
+                  <select
+                    id="countries"
+                    class="bg-gray-200 border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  >
+                    <option selected>Choose Job Type</option>
+                    <option value="Full Time">Full Time</option>
+                    <option value="Part Time">Part Time</option>
+                    <option value="Intern">Intern</option>
+                  </select>
                 </div>
               </div>
               {/* dept type ends */}
@@ -109,10 +122,9 @@ export default function Jobform() {
                   <input
                     class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                     id="grid-first-name"
-                    type="text"
+                    type="number"
                     placeholder="department here"
                   />
-                  
                 </div>
                 <div class="w-full md:w-1/2 px-3">
                   <label
@@ -124,8 +136,8 @@ export default function Jobform() {
                   <input
                     class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     id="grid-last-name"
-                    type="text"
-                    placeholder="Job type"
+                    type="date"
+                    placeholder="Select Date"
                   />
                 </div>
               </div>
@@ -142,10 +154,9 @@ export default function Jobform() {
                   <input
                     class="appearance-none block w-full bg-gray-200 text-gray-700 border  rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                     id="grid-first-name"
-                    type="text"
-                    placeholder="department here"
+                    type="number"
+                    placeholder="Experience here"
                   />
-                  
                 </div>
                 <div class="w-full md:w-1/2 px-3">
                   <label
@@ -154,12 +165,15 @@ export default function Jobform() {
                   >
                     Location
                   </label>
-                  <input
-                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="grid-last-name"
-                    type="text"
-                    placeholder="Job type"
-                  />
+                  <select
+                    id="countries"
+                    class="bg-gray-200 border border-gray-300 text-gray-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  >
+                    <option selected>Selected Location</option>
+                    <option value="Los Angles">Los Angles</option>
+                    <option value="California">California</option>
+                    <option value="Australia">Australia</option>
+                  </select>
                 </div>
               </div>
               {/* 3rd row ends */}
@@ -172,12 +186,19 @@ export default function Jobform() {
                   >
                     Hiring Manager
                   </label>
-                  <input
-                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="grid-password"
-                    type="text"
-                    placeholder="Title here"
-                  />
+                  <div className="text-dark">
+                    <Multiselect
+                      isObject={false}
+                      // onRemove={(event) => {
+                      //   console.log(event);
+                      // }}
+                      // onSelect={(event) => {
+                      //   console.log(event);
+                      // }}
+                      options={options}
+                      showCheckbox
+                    />
+                  </div>
                 </div>
               </div>
               {/* Hiring ends */}
@@ -190,19 +211,26 @@ export default function Jobform() {
                   >
                     Skill Sets
                   </label>
-                  <input
-                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                    id="grid-password"
-                    type="text"
-                    placeholder="Title here"
-                  />
+                  <div className="text-dark">
+                    <Multiselect
+                      isObject={false}
+                      // onRemove={(event) => {
+                      //   console.log(event);
+                      // }}
+                      // onSelect={(event) => {
+                      //   console.log(event);
+                      // }}
+                      options={skills}
+                      showCheckbox
+                    />
+                  </div>
                 </div>
               </div>
               {/* skills ends */}
               {/* job desc */}
-              <h1>Job Description</h1>
+              <label>Job Description</label>
+              <input type="text" id="input-resize" class="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 h-48 "></input>
               {/* job desc ends */}
-              
             </form>
 
             {/* it ends here */}

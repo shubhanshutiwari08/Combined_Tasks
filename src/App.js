@@ -1,4 +1,5 @@
 import './App.css';
+// import Selectmultidropdown from './componenets/Selectmultidropdown';
 // import Payement from './componenets/Payement';
 // import Team from './Final/Card';
 // import Spinner from './componenets/Spinner';
@@ -48,6 +49,7 @@ function App() {
     {/* <Payement /> */}
     {/* <Job /> */}
     <Jobform />
+    {/* <Selectmultidropdown /> */}
     </>
   );
 }
