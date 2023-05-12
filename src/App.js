@@ -1,4 +1,5 @@
 import './App.css';
+import Resume from './componenets/Resume';
 // import Selectmultidropdown from './componenets/Selectmultidropdown';
 // import Payement from './componenets/Payement';
 // import Team from './Final/Card';
@@ -20,7 +21,7 @@ import './App.css';
 // import Multiselctcheck from './componenets/Multiselectcheck'    //For multiple checks
 // import Chat from './componenets/Chatupdate';
 // import Job from './componenets/Job';
-import Jobform from './componenets/Jobform';
+// import Jobform from './componenets/Jobform';
 // import Sidebar from './componenets/Sidebar';
 // import Qnasec from './Final/QuestionSelection';
 // import {AiOutlineCaretUp ,AiOutlineCaretDown} from "react-icons/ai";
@@ -51,10 +52,11 @@ function App() {
     {/* <Team /> */}
     {/* <Payement /> */}
     {/* <Job /> */}
-    <Jobform />
+    {/* <Jobform /> */}
     {/* <Selectmultidropdown /> */}
     {/* <Map /> */}
     {/* <Multiselctcheck /> */}
+    <Resume />
     </>
   );
 }
