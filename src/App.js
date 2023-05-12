@@ -1,5 +1,6 @@
 import './App.css';
-import Resume from './componenets/Resume';
+// import Resume from './componenets/Resume';
+import Resumefinal from './componenets/Resumefinal';
 // import Selectmultidropdown from './componenets/Selectmultidropdown';
 // import Payement from './componenets/Payement';
 // import Team from './Final/Card';
@@ -56,7 +57,8 @@ function App() {
     {/* <Selectmultidropdown /> */}
     {/* <Map /> */}
     {/* <Multiselctcheck /> */}
-    <Resume />
+    {/* <Resume /> */}
+    <Resumefinal />
     </>
   );
 }
