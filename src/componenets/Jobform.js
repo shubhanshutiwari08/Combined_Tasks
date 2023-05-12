@@ -17,60 +17,6 @@ import { BsFillBriefcaseFill } from "react-icons/bs";
 import { SiSimpleanalytics } from "react-icons/si";
 
 export default function Jobform() {
-  // const [selectedPeople, setSelectedPeople] = useState([]);
-  // function handlePersonSelect(person) {
-  //   if (selectedPeople.includes(person)) {
-  //     setSelectedPeople(selectedPeople.filter(p => p !== person));
-  //   } else {
-  //     setSelectedPeople([...selectedPeople, person]);
-  //   }
-  // }
-  // const [options] = useState([
-  //   "Mihir Sharma",
-  //   "Rajeev Sharma",
-  //   "Ankit Sharma",
-  //   "Pulkit Singh",
-  // ]);
-  // const [skills] = useState(["C++", "HTML", "Python"]);
-  // const [val,setVal] = useState('')
-  // const hiringMembers = ['Vinnet ','Mahesh','Shivam','Manoj']
-
-  // NEW
-  // const people = [
-  //   {
-  //     name: "John Doe",
-  //     image: "https://picsum.photos/200/300",
-  //   },
-  //   {
-  //     name: "Jane Smith",
-  //     image: "https://picsum.photos/200/300",
-  //   },
-  //   {
-  //     name: "Bob Johnson",
-  //     image: "https://picsum.photos/200/300",
-  //   },
-  // ];
-
-  // const options = people.map((person) => ({
-  //   value: person.name,
-  //   label: (
-  //     <div className="flex items-center">
-  //       <img
-  //         className="w-10 h-10 rounded-full"
-  //         src={person.image}
-  //         alt={person.name}
-  //       />
-  //       <span>{person.name}</span>
-  //     </div>
-  //   ),
-  // }));
-
-  // const [selectedValues, setSelectedValues] = useState([]);
-
-  // function handleSelect(selectedList, selectedItem) {
-  //   setSelectedValues(selectedList);
-  // }
-  // NEW Ends
 
   return (
     <div className="bg-[#eee9fd] h-full">

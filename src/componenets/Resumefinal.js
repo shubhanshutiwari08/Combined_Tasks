@@ -3,7 +3,7 @@ import user from "../assets/user.jpg";
 import ms from "../assets/ms.png";
 import yt from "../assets/yt.png";
 import ig from "../assets/ig.jpeg";
-// import google from '../assets/google.png'
+import google from '../assets/google.png'
 
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 
@@ -12,7 +12,7 @@ export default function Resumefinal() {
   return (
     <div className="bg-[#eee9fd] h-full">
       <div className="max-w-[1200px] mx-auto  min-h-screen">
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid xl:grid-cols-3 gap-4 md:grid-cols-1 sm:grid-cols-1">
           {/* Profile option */}
           <div className="flex flex-col space-y-5">
             {/* 1 */}
@@ -128,10 +128,10 @@ export default function Resumefinal() {
           {/* Profile option Ends */}
           {/* New code */}
 
-          <div className="col-start-2 col-span-2 ">
-            <div class="grid grid-cols-3 gap-4 p-1">
+          <div className="xl:col-start-2 col-span-2 md:col-start-1 ">
+            <div class="grid xl:grid-cols-3 gap-4 p-1   ">
               {/* profile resume button */}
-              <div class="bg-white shadow-md flex justify-between p-2 rounded-xl col-start-1">
+              <div class="bg-white shadow-md flex justify-between p-2 rounded-xl col-start-1  ">
                 <button className="bg-[#6b4adf] w-full  text-white text-center p-1 rounded-xl">
                   Profile
                 </button>
@@ -142,7 +142,7 @@ export default function Resumefinal() {
               {/* profile reume button ends */}
 
               {/* profile desc */}
-              <div class="bg-white shadow-md p-3 rounded-xl col-start-1 space-y-5">
+              <div class="bg-white shadow-md p-3 rounded-xl col-start-1 space-y-5  ">
                 <div className="flex justify-between">
                   <img className="w-8 h-8" src={yt} alt="" />
                   <img className="w-8 h-8" src={ig} alt="" />
@@ -218,6 +218,7 @@ export default function Resumefinal() {
               <div className=" col-start-1 col-span-3 p-2 border-[6px] border-white rounded-xl">
                 <h1>Experience</h1>
                 <ol class="relative border-l border-gray-200 dark:border-gray-700">
+
                   <li class="mb-10 ml-4">
                   <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                     <div className="bg-white shadow-md flex justify-around p-2 items-center rounded-xl ">
@@ -232,15 +233,12 @@ export default function Resumefinal() {
                         <h1>UX Designer at Microsoft</h1>
                         <h1>Dec 2021 - Oct- 2022</h1>
                       </div>
-                      {/* <FaAngleDown /> */}
-
+                      
                       <button onClick={() => setIsOpen((prev) => !prev)} className='cursor-pointer'>
                    {!isOpen ? (
                       <FaAngleDown />
-                    //   <img className='w-5 h-5' src={down} alt="" srcset="" />
                     ):(
                       <FaAngleUp />
-                    //   <img className='w-5 h-5' src={up} alt="" srcset="" />
                     )
                     }
                 </button>
@@ -257,46 +255,9 @@ export default function Resumefinal() {
                     
                   </li>
 
-                  {/* <li class="mb-10 ml-4">
-                  <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                    <div className="bg-white shadow-md flex justify-around p-2 items-center ">
-                      <div className="flex space-x-2">
-                        <img className="w-12 h-12" src={google} alt="" />
-                        <div>
-                          <h1>UX Designer</h1>
-                          <h1>Microsoft Delhi</h1>
-                        </div>
-                      </div>
-                      <div>
-                        <h1>UX Designer at Microsoft</h1>
-                        <h1>Dec 2021 - Oct- 2022</h1>
-                      </div>
-                      <FaAngleDown />
-                    </div>
-                  </li>
-
-
                   <li class="mb-10 ml-4">
                   <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                    <div className="bg-white shadow-md flex justify-around p-2 items-center ">
-                      <div className="flex space-x-2">
-                        <img className="w-12 h-12" src={yt} alt="" />
-                        <div>
-                          <h1>UX Designer</h1>
-                          <h1>Microsoft Delhi</h1>
-                        </div>
-                      </div>
-                      <div>
-                        <h1>UX Designer at Microsoft</h1>
-                        <h1>Dec 2021 - Oct- 2022</h1>
-                      </div>
-                      <FaAngleDown />
-                    </div>
-                  </li>
-
-                  <li class="mb-10 ml-4">
-                  <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                    <div className="bg-white shadow-md flex justify-around p-2 items-center ">
+                    <div className="bg-white shadow-md flex justify-around p-2 items-center rounded-xl ">
                       <div className="flex space-x-2">
                         <img className="w-12 h-12" src={ms} alt="" />
                         <div>
@@ -308,17 +269,109 @@ export default function Resumefinal() {
                         <h1>UX Designer at Microsoft</h1>
                         <h1>Dec 2021 - Oct- 2022</h1>
                       </div>
+                      
+                      <button onClick={() => setIsOpen((prev) => !prev)} className='cursor-pointer'>
+                   {!isOpen ? (
                       <FaAngleDown />
-                    </div>
-                  </li> */}
-                  
+                    ):(
+                      <FaAngleUp />
+                    )
+                    }
+                </button>
+                </div>
+                <div>
+                {isOpen && (
+              <div className='bg-white h-auto p-3 rounded-lg  shadow-md flex flex-col'>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda earum aliquid labore saepe, rerum unde ad placeat pariatur at maiores.<apan>See More...</apan>
+                  </p>
+              </div>
+            )}
+                </div>
+    
+                    
+                  </li>
+
+                  <li class="mb-10 ml-4">
+                  <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                    <div className="bg-white shadow-md flex justify-around p-2 items-center rounded-xl ">
+                      <div className="flex space-x-2">
+                        <img className="w-12 h-12" src={ms} alt="" />
+                        <div>
+                          <h1>UX Designer</h1>
+                          <h1>Microsoft Delhi</h1>
+                        </div>
+                      </div>
+                      <div>
+                        <h1>UX Designer at Microsoft</h1>
+                        <h1>Dec 2021 - Oct- 2022</h1>
+                      </div>
+                      
+                      <button onClick={() => setIsOpen((prev) => !prev)} className='cursor-pointer'>
+                   {!isOpen ? (
+                      <FaAngleDown />
+                    ):(
+                      <FaAngleUp />
+                    )
+                    }
+                </button>
+                </div>
+                <div>
+                {isOpen && (
+              <div className='bg-white h-auto p-3 rounded-lg  shadow-md flex flex-col'>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda earum aliquid labore saepe, rerum unde ad placeat pariatur at maiores.<apan>See More...</apan>
+                  </p>
+              </div>
+            )}
+                </div>
+    
+                    
+                  </li>
+
+
+                  <li class="mb-10 ml-4">
+                  <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                    <div className="bg-white shadow-md flex justify-around p-2 items-center rounded-xl ">
+                      <div className="flex space-x-2">
+                        <img className="w-12 h-12" src={ms} alt="" />
+                        <div>
+                          <h1>UX Designer</h1>
+                          <h1>Microsoft Delhi</h1>
+                        </div>
+                      </div>
+                      <div>
+                        <h1>UX Designer at Microsoft</h1>
+                        <h1>Dec 2021 - Oct- 2022</h1>
+                      </div>
+                      
+                      <button onClick={() => setIsOpen((prev) => !prev)} className='cursor-pointer'>
+                   {!isOpen ? (
+                      <FaAngleDown />
+                    ):(
+                      <FaAngleUp />
+                    )
+                    }
+                </button>
+                </div>
+                <div>
+                {isOpen && (
+              <div className='bg-white h-auto p-3 rounded-lg  shadow-md flex flex-col'>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda earum aliquid labore saepe, rerum unde ad placeat pariatur at maiores.<apan>See More...</apan>
+                  </p>
+              </div>
+            )}
+                </div>
+    
+                    
+                  </li>
+
+
                 </ol>
               </div>
               {/* Experience ends */}
 
               {/* Education */}
               <div className=" col-start-1 col-span-3 p-2 border-[6px] border-white rounded-xl">
-                <h1>Experience</h1>
+                <h1>Education</h1>
                 <ol class="relative border-l border-gray-200 dark:border-gray-700">
                   <li class="mb-10 ml-4">
                   <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
@@ -338,7 +391,7 @@ export default function Resumefinal() {
                     </div>
                   </li>
 
-                  {/* <li class="mb-10 ml-4">
+                  <li class="mb-10 ml-4">
                   <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                     <div className="bg-white shadow-md flex justify-around p-2 items-center ">
                       <div className="flex space-x-2">
@@ -391,7 +444,7 @@ export default function Resumefinal() {
                       </div>
                       <FaAngleDown />
                     </div>
-                  </li> */}
+                  </li>
                   
                 </ol>
               </div>
