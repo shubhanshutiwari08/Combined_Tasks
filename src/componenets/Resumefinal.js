@@ -154,7 +154,7 @@ export default function Resumefinal() {
                   <h1 className="text-sm text-gray-400">diancopper@gmail.com</h1>
                 </div>
                 <div className="flex justify-center items-center">
-                  <button className="outline text-indigo-900 outline-offset-1 outline-indigo-950 w-full rounded-xl p-1">
+                  <button className=" border-[1px] border-indigo-950 text-indigo-900  w-full rounded-xl p-1">
                     Send Message
                   </button>
                 </div>
@@ -220,7 +220,7 @@ export default function Resumefinal() {
                 <h1>Experience</h1>
                 <ol class="relative border-l border-gray-200 dark:border-gray-700">
 
-                  <li class="mb-10 ml-4">
+                  <li class="mb-5 ml-4">
                   <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                     <div className="bg-white shadow-md flex justify-around p-2 items-center rounded-xl ">
                       <div className="flex space-x-2">
@@ -256,7 +256,7 @@ export default function Resumefinal() {
                     
                   </li>
 
-                  <li class="mb-10 ml-4">
+                  <li class="mb-5 ml-4">
                   <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                     <div className="bg-white shadow-md flex justify-around p-2 items-center rounded-xl ">
                     <div className="flex space-x-2">
@@ -292,7 +292,7 @@ export default function Resumefinal() {
                     
                   </li>
 
-                  <li class="mb-10 ml-4">
+                  <li class="mb-5 ml-4">
                   <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                     <div className="bg-white shadow-md flex justify-around p-2 items-center rounded-xl ">
                     <div className="flex space-x-2">
@@ -329,7 +329,7 @@ export default function Resumefinal() {
                   </li>
 
 
-                  <li class="mb-10 ml-4">
+                  <li class="mb-5 ml-4">
                   <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                     <div className="bg-white shadow-md flex justify-around p-2 items-center rounded-xl ">
                     <div className="flex space-x-2">
@@ -374,7 +374,7 @@ export default function Resumefinal() {
               <div className=" col-start-1 col-span-3 p-2 border-[6px] border-white rounded-xl">
                 <h1>Education</h1>
                 <ol class="relative border-l border-gray-200 dark:border-gray-700">
-                  <li class="mb-10 ml-4">
+                  <li class="mb-5 ml-4">
                   <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                     <div className="bg-white shadow-md flex justify-around p-2 items-center rounded-2xl ">
                       <div className="flex space-x-2">
@@ -392,7 +392,7 @@ export default function Resumefinal() {
                     </div>
                   </li>
 
-                  <li class="mb-10 ml-4">
+                  <li class="mb-5 ml-4">
                   <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                     <div className="bg-white shadow-md flex justify-around p-2 items-center rounded-2xl ">
                     <div className="flex space-x-2">
