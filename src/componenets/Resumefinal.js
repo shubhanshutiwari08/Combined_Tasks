@@ -17,7 +17,7 @@ export default function Resumefinal() {
           {/* Profile option */}
           <div className="flex flex-col space-y-5">
             {/* 1 */}
-            <div className="bg-white shadow-lg p-2 space-y-5 border-[10px] border-white border-l-[#6b4adf] border-r-[#6b4adf]">
+            <div className="bg-white shadow-lg p-3 space-y-5 border-[10px] border-white border-l-[#6b4adf] border-r-[#6b4adf]">
               <div className="flex space-x-4 items-center">
                 <img className="w-16 h-16 rounded-full" src={user} alt="" />
                 <div>
@@ -28,23 +28,23 @@ export default function Resumefinal() {
               </div>
               <div className="flex justify-between">
                 <div className="flex space-x-5">
-                  <h1 className="p-1 bg-[#eee9fd] text-indigo-500 text-center rounded-lg">
+                  <h1 className="p-1.5 bg-[#eee9fd] text-indigo-500 text-center rounded-lg">
                     C++
                   </h1>
-                  <h1 className="p-1 bg-[#eee9fd] text-indigo-500 text-center rounded-lg">
+                  <h1 className="p-1.5 bg-[#eee9fd] text-indigo-500 text-center rounded-lg">
                     Open 5g
                   </h1>
-                  <h1 className="p-1 bg-[#eee9fd] text-indigo-500  text-center rounded-lg">
+                  <h1 className="p-1.5 bg-[#eee9fd] text-indigo-500  text-center rounded-lg">
                     Gpss
                   </h1>
                 </div>
-                <button className="outline outline-offset-1 outline-yellow-300 p-1 rounded-xl text-yellow-300">
+                <button className="outline outline-offset-1 outline-yellow-300 p-1 rounded-lg text-yellow-300">
                   Pending
                 </button>
               </div>
             </div>
             {/* 2 */}
-            <div className="bg-white shadow-lg p-2 space-y-5 border-[10px] border-white border-l-[#6b4adf] border-r-[#6b4adf]">
+            <div className="bg-white shadow-lg p-3 space-y-5 border-[10px] border-white border-l-[#6b4adf] border-r-[#6b4adf]">
               <div className="flex space-x-4 items-center">
                 <img className="w-16 h-16 rounded-full" src={user} alt="" />
                 <div>
@@ -55,23 +55,23 @@ export default function Resumefinal() {
               </div>
               <div className="flex justify-between">
                 <div className="flex space-x-5">
-                  <h1 className="p-1 bg-[#eee9fd] text-indigo-500  text-center rounded-lg">
+                  <h1 className="p-1.5 bg-[#eee9fd] text-indigo-500  text-center rounded-lg">
                     C++
                   </h1>
-                  <h1 className="p-1 bg-[#eee9fd] text-indigo-500  text-center rounded-lg">
+                  <h1 className="p-1.5 bg-[#eee9fd] text-indigo-500  text-center rounded-lg">
                     Open 5g
                   </h1>
-                  <h1 className="p-1 bg-[#eee9fd] text-indigo-500  text-center rounded-lg">
+                  <h1 className="p-1.5 bg-[#eee9fd] text-indigo-500  text-center rounded-lg">
                     Gpss
                   </h1>
                 </div>
-                <button className="outline outline-offset-1 outline-yellow-300 p-1 rounded-xl text-yellow-300">
+                <button className="outline outline-offset-1 outline-yellow-300 p-1 rounded-lg text-yellow-300">
                   Pending
                 </button>
               </div>
             </div>
             {/* 3 */}
-            <div className="bg-white shadow-lg p-2 space-y-5 border-[10px] border-white border-l-[#6b4adf] border-r-[#6b4adf]">
+            <div className="bg-white shadow-lg p-3 space-y-5 border-[10px] border-white border-l-[#6b4adf] border-r-[#6b4adf]">
               <div className="flex space-x-4 items-center">
                 <img className="w-16 h-16 rounded-full" src={user} alt="" />
                 <div>
@@ -82,23 +82,23 @@ export default function Resumefinal() {
               </div>
               <div className="flex justify-between">
                 <div className="flex space-x-5">
-                  <h1 className="p-1 bg-[#eee9fd] text-indigo-500  text-center rounded-lg">
+                  <h1 className="p-1.5 bg-[#eee9fd] text-indigo-500  text-center rounded-lg">
                     C++
                   </h1>
-                  <h1 className="p-1 bg-[#eee9fd] text-indigo-500  text-center rounded-lg">
+                  <h1 className="p-1.5 bg-[#eee9fd] text-indigo-500  text-center rounded-lg">
                     Open 5g
                   </h1>
-                  <h1 className="p-1 bg-[#eee9fd] text-indigo-500  text-center rounded-lg">
+                  <h1 className="p-1.5 bg-[#eee9fd] text-indigo-500  text-center rounded-lg">
                     Gpss
                   </h1>
                 </div>
-                <button className="outline outline-offset-1 outline-yellow-300 p-1 rounded-xl text-yellow-300">
+                <button className="outline outline-offset-1 outline-yellow-300 p-1 rounded-lg text-yellow-300">
                   Pending
                 </button>
               </div>
             </div>
             {/* 4 */}
-            <div className="bg-white shadow-lg p-2 space-y-5 border-[10px] border-white border-l-[#6b4adf] border-r-[#6b4adf]">
+            <div className="bg-white shadow-lg p-3 space-y-5 border-[10px] border-white border-l-[#6b4adf] border-r-[#6b4adf]">
               <div className="flex space-x-4 items-center">
                 <img className="w-16 h-16 rounded-full" src={user} alt="" />
                 <div>
@@ -109,17 +109,17 @@ export default function Resumefinal() {
               </div>
               <div className="flex justify-between">
                 <div className="flex space-x-5">
-                  <h1 className="p-1 bg-[#eee9fd] text-indigo-500  text-center rounded-lg">
+                  <h1 className="p-1.5 bg-[#eee9fd] text-indigo-500  text-center rounded-lg">
                     C++
                   </h1>
-                  <h1 className="p-1 bg-[#eee9fd] text-indigo-500  text-center rounded-lg">
+                  <h1 className="p-1.5 bg-[#eee9fd] text-indigo-500  text-center rounded-lg">
                     Open 5g
                   </h1>
-                  <h1 className="p-1 bg-[#eee9fd] text-indigo-500  text-center rounded-lg">
+                  <h1 className="p-1.5 bg-[#eee9fd] text-indigo-500  text-center rounded-lg">
                     Gpss
                   </h1>
                 </div>
-                <button className="outline outline-offset-1 outline-yellow-300 p-1 rounded-xl text-yellow-300">
+                <button className="outline outline-offset-1 outline-yellow-300 p-1.5 rounded-lg text-yellow-300">
                   Pending
                 </button>
               </div>
@@ -130,7 +130,7 @@ export default function Resumefinal() {
           {/* New code */}
 
           <div className="xl:col-start-2 col-span-2 ">
-            <div class="grid xl:grid-cols-3 gap-4 p-1">
+            <div class="grid xl:grid-cols-3 gap-4 p-1 "> {/*md:flex md:flex-col min-w-[506px]:flex sm:flex-col */}
               {/* profile resume button */}
               <div class="bg-white shadow-md flex justify-between p-2 rounded-xl col-start-1  ">
                 <button className="bg-[#6b4adf] w-full  text-white text-center p-1 rounded-xl">
@@ -149,12 +149,12 @@ export default function Resumefinal() {
                   <img className="w-8 h-8" src={ig} alt="" />
                 </div>
                 <div className="flex flex-col  items-center justify-center">
-                  <img className="w-28 h-28 shadow-md rounded-full" src={user} alt="" />
+                  <img className="xl:w-28 xl:h-28 shadow-md rounded-full md:w-64 md:h-64 md:rounded-full" src={user} alt="" />
                   <h1 className="text-xl font-semibold">Dian Copper</h1>
                   <h1 className="text-sm text-gray-400">diancopper@gmail.com</h1>
                 </div>
                 <div className="flex justify-center items-center">
-                  <button className=" border-[1px] border-indigo-950 text-indigo-900  w-full rounded-xl p-1">
+                  <button className=" border-[1px] border-indigo-950 text-indigo-900 w-40   rounded-xl p-1">
                     Send Message
                   </button>
                 </div>
