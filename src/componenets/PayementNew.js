@@ -20,7 +20,7 @@ export default function PayementNew() {
 
       <div className='flex divide-x-2'>
         {/* 1st div */}
-        <div className='flex flex-col space-y-5 w-[60%] p-5'>
+        <div className='flex flex-col space-y-5 w-[50%] p-5'>
           <h1 className='font-semibold text-xl'>PAYMENT</h1>
           <h2 className='text-sm'>SELECT MONTHS</h2>
           <div className='flex flex-col space-y-5'>
@@ -63,7 +63,7 @@ export default function PayementNew() {
         {/* 1st div ends */}
 
         {/* 2nd div */}
-        <div className='flex flex-col space-y-5 w-[40%] p-5'>
+        <div className='flex flex-col space-y-5 w-[50%] p-5'>
           <h1 className='text-center font-bold text-lg'>BODYSTATION GYM SPA & CAFETERIA</h1>
           <hr />
           <div className='flex flex-col space-y-4'>
