@@ -1,6 +1,7 @@
 import './App.css';
+import PayementNew from './componenets/PayementNew';
 // import Resume from './componenets/Resume';
-import Resumefinal from './componenets/Resumefinal';
+// import Resumefinal from './componenets/Resumefinal';
 // import Selectmultidropdown from './componenets/Selectmultidropdown';
 // import Payement from './componenets/Payement';
 // import Team from './Final/Card';
@@ -58,7 +59,8 @@ function App() {
     {/* <Map /> */}
     {/* <Multiselctcheck /> */}
     {/* <Resume /> */}
-    <Resumefinal />
+    {/* <Resumefinal /> */}
+    < PayementNew />
     </>
   );
 }
