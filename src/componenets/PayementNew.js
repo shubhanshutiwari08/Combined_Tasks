@@ -50,7 +50,7 @@ export default function PayementNew() {
           <h2>PROMO CODE</h2>
           <div className='flex justify-between'>
             <input className='w-[80%] border border-[#7065f0] text-center rounded-lg' type="text" name="" placeholder='Enter the promocode here' id="" />
-            <button className='bg-[#7065f0] p-3 w-20 text-white'>Apply</button>
+            <button className='bg-[#7065f0] p-3 w-20 text-white rounded-lg'>Apply</button>
           </div>
           <hr />
 
@@ -85,9 +85,9 @@ export default function PayementNew() {
 
           <h1 className='font-bold text-lg'>TERMS AND CONDITIONS</h1>
           <div className='text-[#7065f0] flex flex-col space-y-5'>
-            <li>We cannot accept liability for a payement not reaching the correct account due to you quoting an incorrect account number or incorrect personal details</li>
+            <li>We cannot accept liability for a payement not reaching the correct account due to you quoting an incorrect account number or incorrect personal details.</li>
             <li>Neither can we accept liability if payemnt is refused or declined by the credit/debit card supplier for any reason. </li>
-            <li>If the card supplier declines payment Bodystation is under no obligation to bring this fact to your attention. </li>
+            <li>If the card supplier declines payment Bodystation is under no obligation to bring this fact to your attention.</li>
           </div>
 
           <button className='w-full bg-[#7065f0] p-5 text-white rounded-lg text-xl'>Make Payment</button>
