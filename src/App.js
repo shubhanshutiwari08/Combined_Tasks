@@ -1,4 +1,5 @@
 import './App.css';
+// import Input from './componenets/Input';
 import PayementNew from './componenets/PayementNew';
 // import Resume from './componenets/Resume';
 // import Resumefinal from './componenets/Resumefinal';
@@ -61,6 +62,7 @@ function App() {
     {/* <Resume /> */}
     {/* <Resumefinal /> */}
     < PayementNew />
+    {/* < Input /> */}
     </>
   );
 }
