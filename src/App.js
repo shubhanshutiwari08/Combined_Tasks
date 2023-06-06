@@ -1,6 +1,7 @@
 import './App.css';
+import Leaderboard from './componenets/Leaderboard';
 // import Input from './componenets/Input';
-import PayementNew from './componenets/PayementNew';
+// import PayementNew from './componenets/PayementNew';
 // import Resume from './componenets/Resume';
 // import Resumefinal from './componenets/Resumefinal';
 // import Selectmultidropdown from './componenets/Selectmultidropdown';
@@ -61,8 +62,9 @@ function App() {
     {/* <Multiselctcheck /> */}
     {/* <Resume /> */}
     {/* <Resumefinal /> */}
-    < PayementNew />
+    {/* < PayementNew /> */}
     {/* < Input /> */}
+    <Leaderboard />
     </>
   );
 }
