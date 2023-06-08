@@ -7,8 +7,8 @@ export default function Leaderboard() {
       <h1 className="text-8xl text-center justify-items-stretch">
         LEADERBOARD
       </h1>
-      <div className="max-w-[1400px] mx-auto">
-        <div className="max-w-[1000px] mx-auto">
+      <div className="max-w-[1200px] mx-auto">
+        <div className="max-w-[800px] mx-auto">
           <div className="flex justify-between">
             <div className="flex">
               <div className="p-4 bg-[#2d2d61] mb-5 rounded-t-2xl  w-24 items-center flex flex-col justify-center shadow-lg">
