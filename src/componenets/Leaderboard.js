@@ -1,5 +1,10 @@
 import React from "react";
+import './hex.css'
 import user from "../assets/user.jpg";
+import {FaFacebook, FaLinkedin} from 'react-icons/fa'
+import {SiGmail} from 'react-icons/si'
+import rocket from '../assets/rocket.png'
+
 
 export default function Leaderboard() {
   return (
@@ -10,7 +15,7 @@ export default function Leaderboard() {
       <div className="max-w-[1200px] mx-auto">
         <div className="max-w-[800px] mx-auto">
           <div className="flex justify-between">
-            <div className="flex">
+            <div className="flex items-baseline">
               <div className="p-4 bg-[#2d2d61] mb-5 rounded-t-2xl  w-24 items-center flex flex-col justify-center shadow-lg">
                 <h1>Star</h1>
                 <img className="w-8 h-8 rounded-lg" src={user} alt="" />
@@ -18,7 +23,7 @@ export default function Leaderboard() {
                 <h1>523</h1>
                 <h1>coins</h1>
               </div>
-              <div className="p-4 bg-[#2d2d61] mb-5 rounded-t-2xl  w-24 items-center flex flex-col justify-center shadow-lg">
+              <div className="p-4 bg-[#2d2d61] mb-5 rounded-t-2xl h-48   w-24 items-center flex flex-col justify-center shadow-lg">
                 <h1>Star</h1>
                 <img className="w-8 h-8 rounded-lg" src={user} alt="" />
                 <h1>Name</h1>
@@ -33,7 +38,7 @@ export default function Leaderboard() {
                 <h1>coins</h1>
               </div>
             </div>
-            <div className="flex">
+            <div className="flex items-baseline">
               <div className="p-4 bg-[#2d2d61] mb-5 rounded-t-2xl  w-24 items-center flex flex-col justify-center shadow-lg">
                 <h1>Star</h1>
                 <img className="w-8 h-8 rounded-lg" src={user} alt="" />
@@ -41,7 +46,7 @@ export default function Leaderboard() {
                 <h1>523</h1>
                 <h1>coins</h1>
               </div>
-              <div className="p-4 bg-[#2d2d61] mb-5 rounded-t-2xl  w-24 items-center flex flex-col justify-center shadow-lg">
+              <div className="p-4 bg-[#2d2d61] mb-5 rounded-t-2xl h-48  w-24 items-center flex flex-col justify-center shadow-lg">
                 <h1>Star</h1>
                 <img className="w-8 h-8 rounded-lg" src={user} alt="" />
                 <h1>Name</h1>
@@ -61,19 +66,21 @@ export default function Leaderboard() {
 
         {/* Center Div */}
         <div className="flex items-center justify-around mx-auto bg-[#2d2d61] rounded-lg p-8 mb-5">
-          <div>img</div>
-          <div className="flex flex-col space-y-3">
-            <div className="flex">
-              <h1>Name :</h1>
-              <h1>Surya</h1>
+          <div className="hexagon flex items-center justify-center">
+            <img className=" w-24 h-24 rounded-full" src={rocket} alt="" />
+          </div>
+          <div className="flex flex-col space-y-8">
+            <div className="flex items-baseline space-x-3">
+              <h1 className="text-[#8989e7] text-xl">Name :</h1>
+              <h1 className="text-4xl text-[#01b5ff] font-bold">Surya</h1>
             </div>
-            <div className="flex">
-              <h1>Rank :</h1>
-              <h1>23</h1>
+            <div className="flex items-baseline space-x-3">
+              <h1 className="text-[#8989e7] text-xl">Rank :</h1>
+              <h1 className="text-4xl font-bold">23</h1>
             </div>
-            <div className="flex">
-              <h1>Social :</h1>
-              <h1>Insta facebook google</h1>
+            <div className="flex items-baseline space-x-3">
+              <h1 className="text-[#8989e7] text-xl">Social :</h1>
+              <h1 className="flex space-x-5 text-xl"> < FaFacebook/> < FaLinkedin/>  < SiGmail/> </h1>
             </div>
           </div>
           <div className="flex flex-col space-y-5 items-center">
@@ -84,16 +91,16 @@ export default function Leaderboard() {
             />
             <div className="flex justify-between space-x-5 ">
               <div className="flex flex-col justify-center items-center">
-                <h1>320</h1>
-                <h1>Followers</h1>
+                <h1 className="text-xl font-semibold">320</h1>
+                <h1 className="text-[#8989e7]">Followers</h1>
               </div>
               <div className="flex flex-col justify-center items-center">
-                <h1>120</h1>
-                <h1>Following</h1>
+                <h1 className="text-xl font-semibold">120</h1>
+                <h1 className="text-[#8989e7]">Following</h1>
               </div>
               <div className="flex flex-col justify-center items-center">
-                <h1>345</h1>
-                <h1>Coins</h1>
+                <h1 className="text-xl font-semibold">345</h1>
+                <h1 className="text-[#8989e7]">Coins</h1>
               </div>
             </div>
           </div>
@@ -102,59 +109,62 @@ export default function Leaderboard() {
         {/* third div */}
 
         <div className="flex  space-x-8">
-          <div className="w-full shadow-xl">
-            <h1 className="bg-[#2d2d61] p-3 rounded-t-lg">
-              Top 50 Ranks by Countries
+          <div className="w-full shadow-xl p-2">
+            <h1 className="bg-[#2d2d61] p-5 font-bold rounded-t-lg text-lg">
+              Top <span className="text-green-500">50</span> Ranks by Countries
             </h1>
 
             <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
               <table class="w-full text-sm text-left text-blue-100 dark:text-blue-100">
                 <thead class="text-xs text-white uppercase bg-[#25244e] dark:text-white">
-                  <tr className="text-center">
-                    <th scope="col" class="px-6 py-3">
+                  <tr className="text-center text-[#8989e7] p-5">
+                    <th scope="col" class="px-8 py-6">
                      Name
                     </th>
-                    <th scope="col" class="px-6 py-3">
+                    <th scope="col" class="px-8 py-6">
                       Position
                     </th>
-                    <th scope="col" class="px-6 py-3">
+                    <th scope="col" class="px-8 py-6">
                       Country
                     </th>
-                    <th scope="col" class="px-6 py-3">
+                    <th scope="col" class="px-8 py-6">
                       Coins
                     </th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="bg-[#33325a]  border-b border-blue-400 text-center">
+                  <tr class="bg-[#33325a]  border-b border-blue-400 text-center shadow-lg">
                     <th
                       scope="row"
-                      class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100"
+                      class="px-12 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100 flex space-x-3"
                     >
-                      Surya
+                      <img className="w-6 h-6 rounded-lg" src={user} alt="" />
+                      <h1>Surya</h1>
                     </th>
                     <td class="px-6 py-4">23</td>
                     <td class="px-6 py-4">India</td>
                     <td class="px-6 py-4">345</td>
                   </tr>
                   <tr class="bg-[#25244e] border-b border-blue-400 text-center">
-                    <th
+                  <th
                       scope="row"
-                      class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100"
+                      class="px-12 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100 flex space-x-3"
                     >
-                      Abhi
+                      <img className="w-6 h-6 rounded-lg" src={user} alt="" />
+                      <h1>Surya</h1>
                     </th>
                     <td class="px-6 py-4">1</td>
                     <td class="px-6 py-4">India</td>
                     <td class="px-6 py-4">543</td>
                     
                   </tr>
-                  <tr class="bg-[#33325a]  border-b border-blue-400 text-center">
-                    <th
+                  <tr class="bg-[#33325a]  border-b border-blue-400 text-center shadow-lg">
+                  <th
                       scope="row"
-                      class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100"
+                      class="px-12 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100 flex space-x-3"
                     >
-                      Ajay
+                      <img className="w-6 h-6 rounded-lg" src={user} alt="" />
+                      <h1>Surya</h1>
                     </th>
                     <td class="px-6 py-4">2</td>
                     <td class="px-6 py-4">India</td>
@@ -162,23 +172,25 @@ export default function Leaderboard() {
                     
                   </tr>
                   <tr class="bg-[#25244e] border-b border-blue-400 text-center">
-                    <th
+                  <th
                       scope="row"
-                      class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100"
+                      class="px-12 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100 flex space-x-3"
                     >
-                      Elena
+                      <img className="w-6 h-6 rounded-lg" src={user} alt="" />
+                      <h1>Surya</h1>
                     </th>
                     <td class="px-6 py-4">3</td>
                     <td class="px-6 py-4">USA</td>
                     <td class="px-6 py-4">505</td>
                     
                   </tr>
-                  <tr class="bg-[#33325a]  border-blue-40 text-center">
-                    <th
+                  <tr class="bg-[#33325a]  border-blue-40 text-center shadow-xl">
+                  <th
                       scope="row"
-                      class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100"
+                      class="px-12 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100 flex space-x-3"
                     >
-                      Apple Watch 5
+                      <img className="w-6 h-6 rounded-lg" src={user} alt="" />
+                      <h1>Surya</h1>
                     </th>
                     <td class="px-6 py-4">Red</td>
                     <td class="px-6 py-4">Wearables</td>
@@ -188,50 +200,52 @@ export default function Leaderboard() {
                 </tbody>
               </table>
             </div>
-            
+            Page 1 of 300  
           </div>
-          <div className="w-full shadow-xl">
-            <h1 className="bg-[#2d2d61] p-3 rounded-t-lg">
-              Top 50 Ranks by Categories
+          <div className="w-full shadow-xl p-2">
+            <h1 className="bg-[#2d2d61] p-5 font-bold rounded-t-lg text-lg">
+              Top <span className="text-green-500">50</span> Ranks by Categories
             </h1>
 
 
             <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-              <table class="w-full text-sm text-left text-blue-100 dark:text-blue-100">
+              <table class="w-full text-sm text-left text-blue-100 dark:text-blue-100 font-semibold">
                 <thead class="text-xs text-white uppercase bg-[#25244e] dark:text-white">
-                  <tr className="text-center">
-                    <th scope="col" class="px-6 py-3">
+                  <tr className="text-center text-[#8989e7] p-5">
+                    <th scope="col" class="px-8 py-6">
                      Name
                     </th>
-                    <th scope="col" class="px-6 py-3">
+                    <th scope="col" class="px-8 py-6">
                       Position
                     </th>
-                    <th scope="col" class="px-6 py-3">
+                    <th scope="col" class="px-8 py-6">
                       Country
                     </th>
-                    <th scope="col" class="px-6 py-3">
+                    <th scope="col" class="px-8 py-6">
                       Coins
                     </th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="bg-[#33325a]  border-b border-blue-400 text-center">
-                    <th
+                  <tr class="bg-[#33325a]  border-b border-blue-400 text-center font-bold">
+                  <th
                       scope="row"
-                      class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100"
+                      class="px-12 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100 flex space-x-3"
                     >
-                      Surya
+                      <img className="w-6 h-6 rounded-lg" src={user} alt="" />
+                      <h1>Surya</h1>
                     </th>
-                    <td class="px-6 py-4">23</td>
-                    <td class="px-6 py-4">India</td>
-                    <td class="px-6 py-4">345</td>
+                    <td class="px-6 py-4 font-bold">23</td>
+                    <td class="px-6 py-4 font-bold">India</td>
+                    <td class="px-6 py-4 font-bold">345</td>
                   </tr>
                   <tr class="bg-[#25244e] border-b border-blue-400 text-center">
-                    <th
+                  <th
                       scope="row"
-                      class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100"
+                      class="px-12 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100 flex space-x-3"
                     >
-                      Abhi
+                      <img className="w-6 h-6 rounded-lg" src={user} alt="" />
+                      <h1>Surya</h1>
                     </th>
                     <td class="px-6 py-4">1</td>
                     <td class="px-6 py-4">India</td>
@@ -239,11 +253,12 @@ export default function Leaderboard() {
                     
                   </tr>
                   <tr class="bg-[#33325a]  border-b border-blue-400 text-center">
-                    <th
+                  <th
                       scope="row"
-                      class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100"
+                      class="px-12 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100 flex space-x-3"
                     >
-                      Ajay
+                      <img className="w-6 h-6 rounded-lg" src={user} alt="" />
+                      <h1>Surya</h1>
                     </th>
                     <td class="px-6 py-4">2</td>
                     <td class="px-6 py-4">India</td>
@@ -251,11 +266,12 @@ export default function Leaderboard() {
                     
                   </tr>
                   <tr class="bg-[#25244e] border-b border-blue-400 text-center">
-                    <th
+                  <th
                       scope="row"
-                      class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100"
+                      class="px-12 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100 flex space-x-3"
                     >
-                      Elena
+                      <img className="w-6 h-6 rounded-lg" src={user} alt="" />
+                      <h1>Surya</h1>
                     </th>
                     <td class="px-6 py-4">3</td>
                     <td class="px-6 py-4">USA</td>
@@ -263,11 +279,12 @@ export default function Leaderboard() {
                     
                   </tr>
                   <tr class="bg-[#33325a]  border-blue-40 text-center">
-                    <th
+                  <th
                       scope="row"
-                      class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100"
+                      class="px-12 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100 flex space-x-3"
                     >
-                      Apple Watch 5
+                      <img className="w-6 h-6 rounded-lg" src={user} alt="" />
+                      <h1>Surya</h1>
                     </th>
                     <td class="px-6 py-4">Red</td>
                     <td class="px-6 py-4">Wearables</td>
@@ -277,6 +294,7 @@ export default function Leaderboard() {
                 </tbody>
               </table>
             </div>
+            Page 1 of 300 
           </div>
         </div>
       </div>
