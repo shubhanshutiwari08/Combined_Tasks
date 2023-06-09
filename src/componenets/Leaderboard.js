@@ -1,10 +1,13 @@
 import React from "react";
 import './hex.css'
 import user from "../assets/user.jpg";
+import silver from '../assets/silver.jpeg'
+import gold from '../assets/gold.jpg'
+import bronze from '../assets/bronje.jpeg'
 import {FaFacebook, FaLinkedin} from 'react-icons/fa'
 import {SiGmail} from 'react-icons/si'
 import rocket from '../assets/rocket.png'
-
+// import Card from "./Card";
 
 export default function Leaderboard() {
   return (
@@ -13,56 +16,64 @@ export default function Leaderboard() {
         LEADERBOARD
       </h1>
       <div className="max-w-[1200px] mx-auto">
-        <div className="max-w-[800px] mx-auto">
-          <div className="flex justify-between">
+        <div className="max-w-[800px] mx-auto ">
+          <div className="flex justify-between my-5">
             <div className="flex items-baseline">
               <div className="p-4 bg-[#2d2d61] mb-5 rounded-t-2xl  w-24 items-center flex flex-col justify-center shadow-lg">
-                <h1>Star</h1>
+                <img className="relative -top-8 w-8 h-8 rounded-full" src={silver} alt="" />
                 <img className="w-8 h-8 rounded-lg" src={user} alt="" />
-                <h1>Name</h1>
+                <h1 className="text-lg font-semibold">Elena</h1>
                 <h1>523</h1>
-                <h1>coins</h1>
+                <h1 className="text-[#8989e7]">coins</h1>
               </div>
               <div className="p-4 bg-[#2d2d61] mb-5 rounded-t-2xl h-48   w-24 items-center flex flex-col justify-center shadow-lg">
-                <h1>Star</h1>
+              <img className="relative -top-10 w-8 h-8 rounded-full" src={gold} alt="" />
                 <img className="w-8 h-8 rounded-lg" src={user} alt="" />
-                <h1>Name</h1>
+                <h1 className="text-lg font-semibold">Elena</h1>
                 <h1>523</h1>
-                <h1>coins</h1>
+                <h1 className="text-[#8989e7]">coins</h1>
               </div>
               <div className="p-4 bg-[#2d2d61] mb-5 rounded-t-2xl  w-24 items-center flex flex-col justify-center shadow-lg">
-                <h1>Star</h1>
+              <img className="relative -top-8 w-8 h-8 rounded-full" src={bronze} alt="" />
                 <img className="w-8 h-8 rounded-lg" src={user} alt="" />
-                <h1>Name</h1>
+                <h1 className="text-lg font-semibold">Elena</h1>
                 <h1>523</h1>
-                <h1>coins</h1>
+                <h1 className="text-[#8989e7]">coins</h1>
               </div>
             </div>
             <div className="flex items-baseline">
               <div className="p-4 bg-[#2d2d61] mb-5 rounded-t-2xl  w-24 items-center flex flex-col justify-center shadow-lg">
-                <h1>Star</h1>
+              <img className="relative -top-8 w-8 h-8 rounded-full" src={silver} alt="" />
                 <img className="w-8 h-8 rounded-lg" src={user} alt="" />
-                <h1>Name</h1>
+                <h1 className="text-lg font-semibold">Elena</h1>
                 <h1>523</h1>
-                <h1>coins</h1>
+                <h1 className="text-[#8989e7]">coins</h1>
               </div>
               <div className="p-4 bg-[#2d2d61] mb-5 rounded-t-2xl h-48  w-24 items-center flex flex-col justify-center shadow-lg">
-                <h1>Star</h1>
+              <img className="relative -top-10 w-8 h-8 rounded-full" src={gold} alt="" />
                 <img className="w-8 h-8 rounded-lg" src={user} alt="" />
-                <h1>Name</h1>
+                <h1 className="text-lg font-semibold">Elena</h1>
                 <h1>523</h1>
-                <h1>coins</h1>
+                <h1 className="text-[#8989e7]">coins</h1>
               </div>
               <div className="p-4 bg-[#2d2d61] mb-5 rounded-t-2xl  w-24 items-center flex flex-col justify-center shadow-lg">
-                <h1>Star</h1>
+              <img className="relative -top-8 w-8 h-8 rounded-full" src={bronze} alt="" />
                 <img className="w-8 h-8 rounded-lg" src={user} alt="" />
-                <h1>Name</h1>
+                <h1 className="text-lg font-semibold">Elena</h1>
                 <h1>523</h1>
-                <h1>coins</h1>
+                <h1 className="text-[#8989e7]">coins</h1>
               </div>
             </div>
           </div>
         </div>
+        {/* <div className="container mx-auto my-4">
+      <div className="grid grid-cols-3 gap-4">
+        <Card title="Card 1" content="Card 1 content" />
+        <Card title="Card 2" content="Card 2 content" />
+        <Card title="Card 3" content="Card 3 content" />
+      </div>
+    </div> */}
+
 
         {/* Center Div */}
         <div className="flex items-center justify-around mx-auto bg-[#2d2d61] rounded-lg p-8 mb-5">
